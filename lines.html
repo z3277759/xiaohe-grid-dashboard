@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>产线贡献明细分析</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f0f2f5; color: #333; padding: 16px;
+}
+.header {
+    background: linear-gradient(135deg,#1a3a5c 0%,#2d6a9f 100%);
+    color: #fff; padding: 16px 24px; border-radius: 12px;
+    margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;
+}
+.header h1 { font-size: 20px; font-weight: 600; }
+.header .sub { font-size: 13px; opacity: .85; margin-top: 2px; }
+.back-btn {
+    background: rgba(255,255,255,.2); color: #fff; border: none;
+    padding: 8px 18px; border-radius: 20px; font-size: 14px; cursor: pointer;
+    text-decoration: none; display: inline-flex; align-items: center; gap: 6px;
+}
+.back-btn:hover { background: rgba(255,255,255,.3); }
+
+/* Line block */
+.line-block {
+    background: #fff; border-radius: 12px; padding: 20px; margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.line-title {
+    font-size: 18px; font-weight: 700; margin-bottom: 4px; display: flex; align-items: center; gap: 10px;
+}
+.line-sub { font-size: 13px; color: #888; margin-bottom: 14px; }
+.line-strip {
+    display: flex; gap: 12px; margin-bottom: 14px; flex-wrap: wrap;
+}
+.strip-item {
+    background: #f7f9fc; border-radius: 8px; padding: 8px 14px; font-size: 13px;
+    display: flex; align-items: center; gap: 6px;
+}
+.strip-item .num { font-weight: 700; font-size: 16px; }
+
+.line-block .chart-ct { width: 100%; height: 380px; margin-bottom: 16px; }
+
+.line-block .section-title {
+    font-size: 15px; font-weight: 600; color: #1a3a5c;
+    margin: 16px 0 10px 0; padding-bottom: 6px; border-bottom: 1px solid #eee;
+}
+
+/* Table */
+.tbl-wrap { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th {
+    background: #f7f9fc; padding: 7px 10px; text-align: center;
+    font-weight: 600; color: #555; border-bottom: 2px solid #e8eaed;
+}
+.tbl td { padding: 6px 10px; text-align: center; border-bottom: 1px solid #f0f0f0; }
+.tbl .org-n { text-align: left; max-width: 320px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tbl .total td { background: #f7f9fc; font-weight: 700; border-top: 2px solid #ddd; }
+.ok { color: #22a67e; font-weight: 600; }
+.bad { color: #e64a4a; font-weight: 600; }
+
+/* Grid list in line section */
+.grid-cards {
+    display: grid; grid-template-columns: repeat(5,1fr); gap: 10px; margin-bottom: 14px;
+}
+.gc-item {
+    background: #f7f9fc; border-radius: 8px; padding: 12px; text-align: center;
+}
+.gc-item .gc-name { font-size: 13px; font-weight: 600; color: #1a3a5c; }
+.gc-item .gc-val { font-size: 22px; font-weight: 700; margin: 4px 0; }
+.gc-item .gc-sub { font-size: 11px; color: #999; }
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <h1>产线贡献明细分析</h1>
+        <div class="sub">各产线在五大指标中的贡献构成与渠道分布</div>
+    </div>
+    <a href="/" class="back-btn">← 返回总看板</a>
+</div>
+
+<div id="content"></div>
+
+<script>
+let DATA = null;
+
+fetch('./data.json').then(r=>r.json()).then(data=>{
+    DATA = data;
+    renderAll(data.daily);
+}).catch(err=>{
+    document.getElementById('content').innerHTML='<div style="padding:40px;text-align:center;color:red;"><h2>❌ 数据加载失败</h2></div>';
+});
+
+const IKEYS = ['xinruwang','dataitaocan','fttr','broadband','xielu'];
+const INAMES = {xinruwang:'新入网',dataitaocan:'大套餐',fttr:'FTTR',broadband:'宽带新增',xielu:'携转'};
+const ICLR  = {xinruwang:'#5470c6',dataitaocan:'#91cc75',fttr:'#fac858',broadband:'#ee6666',xielu:'#73c0de'};
+const LNAMES = {'1重要':'重要渠道','2中腰':'中腰渠道','3铁通':'铁通渠道','4行销':'行销渠道'};
+const LCLR   = {'1重要':'#e74c3c','2中腰':'#f39c12','3铁通':'#3498db','4行销':'#2ecc71'};
+const LICON  = {'1重要':'🔴','2中腰':'🟡','3铁通':'🔵','4行销':'🟢'};
+const LORDER = ['1重要','2中腰','3铁通','4行销'];
+
+function renderAll(d) {
+    const container = document.getElementById('content');
+    let html = '';
+    LORDER.forEach(line => {
+        html += buildLineBlock(d, line);
+    });
+    container.innerHTML = html;
+
+    // Render charts after DOM is built
+    LORDER.forEach(line => {
+        renderLineDetailChart(d, line, 'chart-'+line);
+    });
+}
+
+function buildLineBlock(d, line) {
+    const name = LNAMES[line] || line;
+    const icon = LICON[line] || '📊';
+    const color = LCLR[line] || '#666';
+
+    // Filter data for this line
+    const lineGrids = d.gridLineData.filter(x => x.line === line);
+    const lineTotal = lineGrids.reduce((s,x) => s + (x.total||0), 0);
+
+    // Per-grid totals
+    const gridTotals = {};
+    lineGrids.forEach(x => {
+        const g = x.grid.replace(/^[0-9]+/,'');
+        gridTotals[g] = (gridTotals[g]||0) + (x.total||0);
+    });
+    const sortedGrids = Object.entries(gridTotals).sort((a,b)=>b[1]-a[1]);
+
+    // Per-indicator totals for this line
+    const indTotals = {};
+    IKEYS.forEach(k => {
+        indTotals[k] = lineGrids.reduce((s,x) => s + (x[k]||0), 0);
+    });
+
+    // Collect orgs for this line
+    const lineOrgs = [];
+    lineGrids.forEach(x => {
+        if (x.orgs) {
+            x.orgs.forEach(org => {
+                const grid = x.grid.replace(/^[0-9]+/,'');
+                lineOrgs.push({ org, grid });
+            });
+        }
+    });
+
+    // Org detail data
+    const orgDetailRows = [];
+    const orgSeen = new Set();
+    lineGrids.forEach(x => {
+        if (!x.orgs) return;
+        const gridName = x.grid.replace(/^[0-9]+/,'');
+        x.orgs.forEach(org => {
+            if (orgSeen.has(org)) return;
+            orgSeen.add(org);
+            // Find in orgDetails
+            let found = null;
+            const dets = d.orgDetails[x.grid];
+            if (dets) {
+                found = dets.find(o => o.org === org);
+            }
+            if (found) {
+                const t = IKEYS.reduce((s,k)=>s+((found[k]||0)),0);
+                orgDetailRows.push({ org, grid: gridName, ...found, total: t });
+            }
+        });
+    });
+    orgDetailRows.sort((a,b) => b.total - a.total);
+
+    const totalOrgs = orgDetailRows.length;
+
+    // Build summary strip
+    let stripHtml = `<div class="strip-item" style="border-left:3px solid ${color};padding-left:10px;">
+        <span> 总完成</span><span class="num">${lineTotal}</span><span>笔</span>
+    </div>`;
+    IKEYS.forEach(k => {
+        if (indTotals[k] > 0) {
+            const pct = Math.round(indTotals[k] / lineTotal * 100);
+            stripHtml += `<div class="strip-item"><span>${INAMES[k]}</span><span class="num">${indTotals[k]}</span><span>笔 (${pct}%)</span></div>`;
+        }
+    });
+    stripHtml += `<div class="strip-item"><span> 涉及渠道</span><span class="num">${totalOrgs}</span><span>个</span></div>`;
+
+    // Grid mini-cards
+    let gridCardsHtml = '';
+    sortedGrids.forEach(([g,v]) => {
+        const pct = Math.round(v / lineTotal * 100);
+        gridCardsHtml += `<div class="gc-item"><div class="gc-name">${g}</div><div class="gc-val">${v}</div><div class="gc-sub">占比 ${pct}%</div></div>`;
+    });
+
+    // Org detail table
+    let tblHtml = '';
+    if (orgDetailRows.length > 0) {
+        tblHtml = `<div class="section-title"> 渠道明细（${orgDetailRows.length}个受理组织）</div>
+        <div class="tbl-wrap"><table class="tbl">
+        <thead><tr><th>所属网格</th><th>受理组织</th>
+        ${IKEYS.map(k=>`<th>${INAMES[k]}</th>`).join('')}
+        <th>合计</th></tr></thead><tbody>`;
+        orgDetailRows.forEach(r => {
+            const t = IKEYS.reduce((s,k)=>s+((r[k]||0)),0);
+            tblHtml += `<tr><td>${r.grid}</td>
+            <td class="org-n" title="${r.org}">${r.org}</td>`;
+            IKEYS.forEach(k => {
+                const v = r[k]||0;
+                const cls = v===0?'bad':(v>=3?'ok':'');
+                tblHtml += `<td class="${cls}">${v}</td>`;
+            });
+            tblHtml += `<td><strong>${t}</strong></td></tr>`;
+        });
+        tblHtml += '</tbody></table></div>';
+    }
+
+    return `
+    <div class="line-block">
+        <div class="line-title" style="color:${color}">
+            <span>${icon}</span> ${name}
+        </div>
+        <div class="line-sub">当日完成量 · 网格分布 · 渠道明细</div>
+        <div class="line-strip">${stripHtml}</div>
+        <div class="section-title"> 各网格指标贡献</div>
+        <div class="chart-ct" id="chart-${line}"></div>
+        <div class="section-title"> 网格产能分布</div>
+        <div class="grid-cards">${gridCardsHtml}</div>
+        ${tblHtml}
+    </div>`;
+}
+
+function renderLineDetailChart(d, line, domId) {
+    const el = document.getElementById(domId);
+    if (!el) return;
+    const c = echarts.init(el);
+    const lineGrids = d.gridLineData.filter(x => x.line === line);
+    const grids = d.gridData.map(g => g.grid.replace(/^[0-9]+/,''));
+
+    const agg = {};
+    lineGrids.forEach(x => {
+        const g = x.grid.replace(/^[0-9]+/,'');
+        if (!agg[g]) { agg[g] = {}; IKEYS.forEach(k => agg[g][k] = 0); }
+        IKEYS.forEach(k => { agg[g][k] += x[k]||0; });
+    });
+
+    const totalByGrid = grids.map(g => IKEYS.reduce((s,k)=>s+((agg[g]&&agg[g][k])||0),0));
+    const maxVal = Math.max(...totalByGrid, 1);
+
+    c.setOption({
+        tooltip: {
+            trigger: 'axis', axisPointer: { type: 'shadow' },
+            formatter: ps => {
+                let h = '<div style="font-weight:600;margin-bottom:4px;">'+ps[0].axisValue+'</div>';
+                let t = 0;
+                ps.forEach(p => { t += p.value; h += '<div style="font-size:12px;">'+p.marker+' '+p.seriesName+': '+p.value+'笔</div>'; });
+                h += '<div style="border-top:1px solid #eee;margin-top:4px;padding-top:4px;font-weight:600;">合计: '+t+'笔</div>';
+                const pct = Math.round(t / IKEYS.reduce((s,k)=>s+d.overview[k],0) * 100);
+                h += '<div style="font-size:11px;color:#999;">占全网: '+pct+'%</div>';
+                return h;
+            }
+        },
+        grid: { left: '3%', right: '4%', top: '15%', bottom: '3%', containLabel: true },
+        xAxis: { type: 'category', data: grids, axisLabel: { fontSize: 12 } },
+        yAxis: { type: 'value', max: maxVal * 1.2, axisLabel: { fontSize: 10 } },
+        legend: { data: IKEYS.map(k => INAMES[k]), top: 0, textStyle: { fontSize: 11 } },
+        series: IKEYS.map(k => ({
+            name: INAMES[k], type: 'bar', stack: 'total', barMaxWidth: 50,
+            data: grids.map(g => (agg[g] && agg[g][k]) || 0),
+            itemStyle: { color: ICLR[k] },
+            label: {
+                show: true, position: 'inside', fontSize: 11, fontWeight: 'bold',
+                formatter: p => p.value > 0 ? p.value : ''
+            }
+        }))
+    });
+    window.addEventListener('resize', () => c.resize());
+}
+</script>
+</body>
+</html>

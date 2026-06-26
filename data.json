@@ -1,0 +1,5870 @@
+{
+  "meta": {
+    "generatedAt": "2026-06-23T07:23:26.656Z",
+    "indicators": [
+      "xinruwang",
+      "dataitaocan",
+      "fttr",
+      "broadband",
+      "xielu"
+    ],
+    "indicatorNames": {
+      "xinruwang": "新入网",
+      "dataitaocan": "大套餐",
+      "fttr": "FTTR",
+      "broadband": "宽带新增",
+      "xielu": "携转"
+    },
+    "grids": [
+      "1小河长江万科网格",
+      "2小河平桥兴隆网格",
+      "3小河二戈寨网格",
+      "4小河金竹中曹网格",
+      "5小河望城网格"
+    ],
+    "lines": [
+      "1重要",
+      "2中腰",
+      "3铁通",
+      "4行销"
+    ],
+    "dailyDate": "2026-06-05",
+    "monthRange": "2026-06-01 ~ 2026-06-05"
+  },
+  "daily": {
+    "overview": {
+      "xinruwang": 126,
+      "dataitaocan": 22,
+      "fttr": 26,
+      "broadband": 44,
+      "xielu": 7
+    },
+    "gridData": [
+      {
+        "grid": "2小河平桥兴隆网格",
+        "xinruwang": 62,
+        "dataitaocan": 13,
+        "fttr": 6,
+        "broadband": 17,
+        "xielu": 1,
+        "total": 99
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "xinruwang": 34,
+        "dataitaocan": 7,
+        "fttr": 9,
+        "broadband": 14,
+        "xielu": 1,
+        "total": 65
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "xinruwang": 15,
+        "dataitaocan": 2,
+        "fttr": 3,
+        "broadband": 7,
+        "xielu": 3,
+        "total": 30
+      },
+      {
+        "grid": "5小河望城网格",
+        "xinruwang": 5,
+        "dataitaocan": 0,
+        "fttr": 7,
+        "broadband": 5,
+        "xielu": 0,
+        "total": 17
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "xinruwang": 10,
+        "dataitaocan": 0,
+        "fttr": 1,
+        "broadband": 0,
+        "xielu": 2,
+        "total": 13
+      }
+    ],
+    "lineData": [
+      {
+        "line": "3铁通",
+        "xinruwang": 24,
+        "dataitaocan": 5,
+        "fttr": 20,
+        "broadband": 26,
+        "xielu": 3,
+        "total": 78
+      },
+      {
+        "line": "1重要",
+        "xinruwang": 51,
+        "dataitaocan": 3,
+        "fttr": 4,
+        "broadband": 12,
+        "xielu": 3,
+        "total": 73
+      },
+      {
+        "line": "4行销",
+        "xinruwang": 23,
+        "dataitaocan": 14,
+        "fttr": 1,
+        "broadband": 3,
+        "xielu": 1,
+        "total": 42
+      },
+      {
+        "line": "2中腰",
+        "xinruwang": 28,
+        "dataitaocan": 0,
+        "fttr": 1,
+        "broadband": 2,
+        "xielu": 0,
+        "total": 31
+      }
+    ],
+    "gridLineData": [
+      {
+        "grid": "1小河长江万科网格",
+        "line": "1重要",
+        "orgCount": 3,
+        "orgs": [
+          "贵阳市经开区华众明远电讯经营部（小河范华炬代办点）",
+          "贵阳市经开区小范手机经营部（小河范华炬代办点）",
+          "贵州华众明远电讯科技有限责任公司（小河转盘厂商）"
+        ],
+        "xinruwang": 11,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 1,
+        "xielu": 0,
+        "total": 12
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "line": "2中腰",
+        "orgCount": 14,
+        "orgs": [
+          "贵阳市经开区远达通讯经营部（小河韩廷圳代办点）",
+          "贵阳小河鑫磊公话亭（小河黄国芬代办点）",
+          "贵州百讯通网络科技有限公司（小河刘天赐直销队）",
+          "贵阳市经济技术开发区正泰通讯器材经营部（小河刘美华代办点）",
+          "贵阳市经开区小桥通讯器材经营部（小河何桥代办点）",
+          "贵阳小河晶晶通讯器材经营部（小河三江东）",
+          "贵阳市经开区恒点波通讯器材经营部（小河陈贵扬代办点）",
+          "贵阳市经济开发区恒波通讯器材经营部（小河陈贵扬代办点）",
+          "贵州锐步鑫通讯科技有限公司（小河雷剑直销队）",
+          "贵阳经济开发区鑫光春晟数码经营部(小河小天才万科厂商店)",
+          "贵州互助通移动通信网络服务有限公司(小河万科)",
+          "贵阳市南明区启跃商贸行（小河田亚咪直销队）",
+          "贵阳市经济开发区聚信达通讯经营部（小河孙旭东直销队）",
+          "贵州艾思法电子商贸有限公司（小河万科广场店)"
+        ],
+        "xinruwang": 6,
+        "dataitaocan": 0,
+        "fttr": 1,
+        "broadband": 1,
+        "xielu": 0,
+        "total": 8
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "line": "3铁通",
+        "orgCount": 31,
+        "orgs": [
+          "中移铁通贵阳分公司1308-小河小城故事片区宽服中心（社会房产）",
+          "小河区长江万科网格铁通随销人员冯灿辉",
+          "小河区长江万科网格铁通随销人员张玉模",
+          "小河区长江万科网格铁通随销人员王维成",
+          "小河区长江万科网格铁通随销人员杨明将",
+          "小河区长江万科网格铁通随销人员林洪友",
+          "小河区长江万科网格铁通随销人员荣昭宏",
+          "小河区长江万科网格铁通随销人员许树林",
+          "小河区长江万科网格铁通随销人员赵世飞",
+          "小河区长江万科网格铁通随销人员贾崇庆",
+          "小河区长江万科网格铁通随销人员张健",
+          "小河区长江万科网格铁通随销人员熊美梦",
+          "小河区长江万科网格铁通随销人员何杰",
+          "小河区长江万科网格铁通随销人员李阳光",
+          "小河区长江万科网格铁通随销人员高兴边",
+          "小河区长江万科网格铁通随销人员李祖新",
+          "小河区长江万科网格铁通随销人员张建兵",
+          "小河区长江万科网格铁通随销人员汪嘉乐",
+          "中移铁通贵阳分公司1309-小河美城新都片区宽服中心（社会房产）",
+          "小河区长江万科网格铁通随销人员罗佳佳",
+          "小河区长江万科网格铁通随销人员费学聪",
+          "小河区望城网格铁通随销人员熊美梦",
+          "小河区长江万科网格铁通随销人员熊美欢",
+          "小河区长江万科网格铁通随销人员陈善钰",
+          "小河区长江万科网格铁通随销人员谭安元",
+          "小河区长江万科网格铁通随销人员夏宝彬",
+          "小河区长江万科网格铁通随销人员石启毫",
+          "小河区长江万科网格铁通随销人员冯学靖",
+          "小河区长江万科网格铁通随销人员张辉",
+          "小河区长江万科网格铁通随销人员刘飞翔",
+          "小河区长江万科网格铁通随销人员熊贤勇"
+        ],
+        "xinruwang": 9,
+        "dataitaocan": 3,
+        "fttr": 8,
+        "broadband": 11,
+        "xielu": 1,
+        "total": 32
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "line": "4行销",
+        "orgCount": 13,
+        "orgs": [
+          "小河长江万科网格行销经理李红永",
+          "小河长江万科网格行销经理邓云川",
+          "小河长江万科网格行销经理严章艳",
+          "小河长江万科网格行销经理叶阳海",
+          "小河长江万科网格行销经理王美",
+          "小河长江万科网格行销经理李梦婷",
+          "小河长江万科网格行销经理韦雪",
+          "小河长江万科网格行销经理周红梅",
+          "小河长江万科网格行销经理李维琴",
+          "小河长江万科网格行销经理刘光平",
+          "小河平桥兴隆网格行销经理黄学友",
+          "小河平桥兴隆网格行销经理李祉兰",
+          "小河长江万科网格行销经理杨玉玲"
+        ],
+        "xinruwang": 8,
+        "dataitaocan": 4,
+        "fttr": 0,
+        "broadband": 1,
+        "xielu": 0,
+        "total": 13
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "1重要",
+        "orgCount": 5,
+        "orgs": [
+          "贵阳市经济开发区茂华盛通讯设备经营部（小河陈依林俤代办点）",
+          "贵阳市小河区黄河路自办营业厅",
+          "贵阳市经济开发区茂桓盛通讯设备经营部（小河区黄河路自营厅合作商）",
+          "贵阳市经济开发区巨立雄通讯部（小河陈媄俤代办点）ZX",
+          "贵州森焱垚盛信息技术有限公司（小河万照燕直销队）ZX"
+        ],
+        "xinruwang": 30,
+        "dataitaocan": 3,
+        "fttr": 4,
+        "broadband": 11,
+        "xielu": 1,
+        "total": 49
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "2中腰",
+        "orgCount": 11,
+        "orgs": [
+          "贵阳市南明区顺时移动业务代理点（小河易姣代办点）",
+          "贵阳市经济技术开发区朱同贵移动通信经营部（小河朱同贵代办点）",
+          "贵阳市经济技术开发区万豪通讯店（小河欧春林代办点）",
+          "贵阳经开区永信通讯经营部（小河吴学刚代办点）",
+          "贵阳经开区佳诚通讯经营部（小河刘仕学代办点）",
+          "贵阳市经济开发区宏顺通讯器材经营部（小河沈秀伟代办点）",
+          "贵阳市花溪区祥旭通讯经营部(小河聂祥旭直销队)",
+          "贵阳市经济开发区雨田通讯器材经营部(个体工商户）（小河平桥兴隆）",
+          "贵阳市经济开发区万博通讯器材经营部（小河江山代办点）",
+          "贵阳市经济开发区启航星晨通讯经营部(小河吴承远代办点)",
+          "贵阳市经济开发区新凯来通讯经营部（小河平桥兴隆）"
+        ],
+        "xinruwang": 15,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 1,
+        "xielu": 0,
+        "total": 16
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "3铁通",
+        "orgCount": 36,
+        "orgs": [
+          "中移铁通贵阳分公司1300-小河香江路片区宽服中心（铁通房产）",
+          "小河区平桥兴隆网格铁通随销人员冯旭剑",
+          "小河区平桥兴隆网格铁通随销人员郭维波",
+          "小河区平桥兴隆网格铁通随销人员李江",
+          "小河区平桥兴隆网格铁通随销人员谭周斌",
+          "小河区平桥兴隆网格铁通随销人员罗成俊",
+          "小河区平桥兴隆网格铁通随销人员张建",
+          "小河区平桥兴隆网格铁通随销人员付淑杰",
+          "小河区平桥兴隆网格铁通随销人员汪成涛",
+          "小河区平桥兴隆网格铁通随销人员谢亮",
+          "小河区金竹中曹网格铁通随销人员王维霞",
+          "小河区平桥兴隆网格铁通随销人员罗雪",
+          "小河区平桥兴隆网格铁通随销人员程将军",
+          "中移铁通贵阳分公司1311-小河缤纷广场片区宽服中心（社会房产）",
+          "小河区平桥兴隆网格铁通随销人员陈坤",
+          "小河区平桥兴隆网格铁通随销人员邓皓聪",
+          "小河区平桥兴隆网格铁通随销人员徐刚",
+          "小河区平桥兴隆网格铁通随销人员张思雨",
+          "小河区平桥兴隆网格铁通随销人员尹泽芳",
+          "小河区平桥兴隆网格铁通随销人员罗山川",
+          "小河区平桥兴隆网格铁通随销人员陈明贵",
+          "小河区平桥兴隆网格铁通随销人员秦志",
+          "小河区平桥兴隆网格铁通随销人员简慧敏",
+          "小河区平桥兴隆网格铁通随销人员吴燕慧",
+          "小河区平桥兴隆网格铁通随销人员罗怡平",
+          "小河区平桥兴隆网格铁通随销人员唐良成",
+          "小河区平桥兴隆网格铁通随销人员王新平",
+          "小河区平桥兴隆网格铁通随销人员郑淇",
+          "小河区平桥兴隆网格铁通随销人员王江",
+          "小河区平桥兴隆网格铁通随销人员朱林",
+          "小河区平桥兴隆网格铁通随销人员邓唐兵",
+          "小河区平桥兴隆网格铁通随销人员肖思吉",
+          "小河区平桥兴隆网格铁通随销人员何玉",
+          "小河平桥兴隆（铁通）网格行销经理桂萍",
+          "小河平桥兴隆（铁通）网格行销经理胡佳利",
+          "小河平桥兴隆（铁通）网格行销经理胡艳"
+        ],
+        "xinruwang": 8,
+        "dataitaocan": 1,
+        "fttr": 2,
+        "broadband": 5,
+        "xielu": 0,
+        "total": 16
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "4行销",
+        "orgCount": 16,
+        "orgs": [
+          "小河平桥兴隆网格行销经理钟建兰",
+          "小河平桥兴隆网格行销经理万茂",
+          "小河平桥兴隆网格行销经理赵亮",
+          "小河平桥兴隆网格行销经理吴娜",
+          "小河平桥兴隆网格行销经理吕万",
+          "小河平桥兴隆网格行销经理张芸",
+          "小河平桥兴隆网格行销经理聂祥义",
+          "小河平桥兴隆网格行销经理黄和莉",
+          "小河平桥兴隆网格行销经理陈健",
+          "小河平桥兴隆网格行销经理聂祥聘",
+          "小河平桥兴隆网格行销经理林日党",
+          "小河平桥兴隆网格行销经理范明文",
+          "小河平桥兴隆网格行销经理赵坤",
+          "小河平桥兴隆网格行销经理李熹",
+          "小河平桥兴隆网格行销经理唐敏",
+          "小河平桥兴隆网格行销经理范阶"
+        ],
+        "xinruwang": 9,
+        "dataitaocan": 9,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 18
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "未分类",
+        "orgCount": 1,
+        "orgs": [
+          "小河公司平桥兴隆网格挽留专员胡佳利"
+        ],
+        "xinruwang": 0,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 0
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "1重要",
+        "orgCount": 1,
+        "orgs": [
+          "贵州沣范通讯设备有限公司（小河二戈引商）"
+        ],
+        "xinruwang": 10,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 2,
+        "total": 12
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "2中腰",
+        "orgCount": 11,
+        "orgs": [
+          "贵阳市南明区思源通信器材经营部（小河杨光花代办点）",
+          "贵阳市南明区韦永英通讯经营部（小河吴德芬代办点）",
+          "南明高胜通讯器材经营部（小河张雷代办点）",
+          "贵阳市经济开发区鸿蒙手机店（小河朱川代办点）",
+          "贵阳市南明区文辰通讯经营部(小河邱埝扬代办点）",
+          "贵州亿鸿盛通讯科技有限公司贵阳分公司（小河珠显村）",
+          "贵阳市经济开发区欧泰通讯设备经营部（小河）",
+          "贵州裕泰通讯科技有限公司（小河石盼盼代办点）",
+          "贵州瑶雅科技有限公司（小河廖丹平直销队）",
+          "贵阳市经济开发区移鑫通通讯经营部（小河徐艳直销队）",
+          "贵州众智高达通讯科技有限公司（小河严勇直销队）"
+        ],
+        "xinruwang": 1,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 1
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "3铁通",
+        "orgCount": 17,
+        "orgs": [
+          "中移铁通贵阳分公司1310-小河二戈寨片区宽服中心（社会房产）",
+          "小河区二戈寨网格铁通随销人员冯超",
+          "小河区二戈寨网格铁通随销人员范开军",
+          "小河区二戈寨网格铁通随销人员胡仕健",
+          "小河区二戈寨网格铁通随销人员李伟",
+          "小河区二戈寨网格铁通随销人员杨志满",
+          "小河区二戈寨网格铁通随销人员岑菊芬",
+          "小河区二戈寨网格铁通随销人员李红林",
+          "小河区二戈寨网格铁通随销人员佟俊毫",
+          "小河区二戈寨网格铁通随销人员熊泽辉",
+          "小河区二戈寨网格铁通随销人员黄启勇",
+          "小河区二戈寨网格铁通随销人员汤绍江",
+          "小河二戈寨（铁通）网格行销经理邓豪",
+          "小河区二戈寨网格铁通随销人员周先艳",
+          "小河二戈寨（铁通）网格行销经理龙翔",
+          "小河二戈寨（铁通）网格行销经理周贞杰",
+          "小河二戈寨（铁通）网格行销经理李正伟"
+        ],
+        "xinruwang": 2,
+        "dataitaocan": 1,
+        "fttr": 2,
+        "broadband": 5,
+        "xielu": 0,
+        "total": 10
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "4行销",
+        "orgCount": 12,
+        "orgs": [
+          "小河二戈寨网格行销经理谭玲",
+          "小河二戈寨网格行销经理莫以琼",
+          "小河二戈寨网格行销经理兰淞瑞",
+          "小河二戈寨网格行销经理李江娥",
+          "小河二戈寨网格行销经理张泉",
+          "小河二戈寨网格行销经理范美迪",
+          "小河二戈寨网格行销经理赵敏琼",
+          "小河二戈寨网格行销经理田锦豪",
+          "小河二戈寨网格行销经理顾啟容",
+          "小河二戈寨网格行销经理周瑾慧",
+          "小河二戈寨网格行销经理张承贵",
+          "小河二戈寨网格行销经理龙依晨"
+        ],
+        "xinruwang": 2,
+        "dataitaocan": 1,
+        "fttr": 1,
+        "broadband": 2,
+        "xielu": 1,
+        "total": 7
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "1重要",
+        "orgCount": 2,
+        "orgs": [
+          "贵阳市南明区范华炬通信器材经营部（小河甘荫塘汽配城）",
+          "贵州恒珀峰通讯设备有限公司（小河李培代办点）ZX"
+        ],
+        "xinruwang": 0,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 0
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "2中腰",
+        "orgCount": 9,
+        "orgs": [
+          "贵阳市南明区四喜信息个体服务部（小河李栋琼代办点）",
+          "贵阳市经济技术开发区小李手机店（小河李仁斌代办点）",
+          "贵阳顺骏忆通讯器材经营部（小河金竹）",
+          "贵阳经开区瑞涵通讯器材经营部（小河林骏代办点）",
+          "贵阳市经济技术开发区嘉润通讯器材经营部（小河肖俊峰代办点）",
+          "贵阳小河金竹118智能手机工厂店（小河胡兆明代办点）",
+          "贵阳市经济技术开发区黔丰通讯经营部（小河黄成兴代办点）",
+          "贵阳经济开发区圆御博通讯器材经营部(个体工商户）(小河何凤英代办点）",
+          "贵阳市经济开发区鑫昌盛通讯设备经营部（小河孙磊磊直销队）"
+        ],
+        "xinruwang": 3,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 3
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "3铁通",
+        "orgCount": 23,
+        "orgs": [
+          "小河区金竹中曹网格铁通随销人员刘青云",
+          "小河区金竹中曹网格铁通随销人员李洵",
+          "小河区金竹中曹网格铁通随销人员葛菘",
+          "小河区金竹中曹网格铁通随销人员胡先胜",
+          "小河区金竹中曹网格铁通随销人员罗晓凯",
+          "小河区金竹中曹网格铁通随销人员马润银",
+          "小河区金竹中曹网格铁通随销人员国庆",
+          "小河区金竹中曹网格铁通随销人员邹立",
+          "小河区金竹中曹网格铁通随销人员谭继鹃",
+          "小河区金竹中曹网格铁通随销人员邹建维",
+          "小河区金竹中曹网格铁通随销人员温格平",
+          "小河区金竹中曹网格铁通随销人员李江惠",
+          "小河区金竹中曹网格铁通随销人员杨旭",
+          "小河区金竹中曹网格铁通随销人员房陈林",
+          "中移铁通贵阳分公司1301-小河四方河路片区宽服中心（社会房产）",
+          "小河区金竹中曹网格铁通随销人员居贵",
+          "小河区金竹中曹网格铁通随销人员姚苇涛",
+          "小河区金竹中曹网格铁通随销人员袁培松",
+          "小河金竹中曹网格行销经理伍少琴",
+          "小河区金竹中曹网格铁通随销人员陶骆祥",
+          "小河区金竹中曹网格铁通随销人员王元武",
+          "小河金竹中曹（铁通）网格行销经理张扬",
+          "小河区金竹中曹网格铁通随销人员钟佳沅"
+        ],
+        "xinruwang": 3,
+        "dataitaocan": 0,
+        "fttr": 1,
+        "broadband": 0,
+        "xielu": 2,
+        "total": 6
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "4行销",
+        "orgCount": 13,
+        "orgs": [
+          "小河金竹中曹网格行销经理陈太琅",
+          "小河金竹中曹网格行销经理晏燕",
+          "小河金竹中曹网格行销经理陈丹",
+          "小河金竹中曹网格行销经理何腾",
+          "小河金竹中曹网格行销经理杨晓雪",
+          "小河金竹中曹网格行销经理张沙沙",
+          "小河金竹中曹网格行销经理殷文慧",
+          "小河金竹中曹网格行销经理曾祥海",
+          "小河金竹中曹网格行销经理邹德建",
+          "小河金竹中曹网格行销经理张雨雪",
+          "小河金竹中曹网格行销经理李杭书",
+          "小河金竹中曹网格行销经理赖福建",
+          "小河金竹中曹网格行销经理徐艳"
+        ],
+        "xinruwang": 4,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 4
+      },
+      {
+        "grid": "5小河望城网格",
+        "line": "2中腰",
+        "orgCount": 8,
+        "orgs": [
+          "贵阳市南明区旻润通讯个体经营部（小河三江东）",
+          "贵州剑昆通信服务有限公司（小河OPPO厂商店）",
+          "贵阳市南明区罗涛手机店(小河罗涛代办点）",
+          "南明区开心数码产品经营部（小河望城）",
+          "贵阳市南明区移动通信绿苑特约代理店（小河沙冲路）",
+          "贵阳市南明区跃华虹通讯器材营业部（小河阙志宇代办点）",
+          "南明区欣耀辉通讯科技服务经营部（小河望城）",
+          "贵阳市南明区乐自立通讯服务经营部（小望城网格）"
+        ],
+        "xinruwang": 3,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 3
+      },
+      {
+        "grid": "5小河望城网格",
+        "line": "3铁通",
+        "orgCount": 18,
+        "orgs": [
+          "小河区望城网格铁通随销人员叶越越",
+          "小河区望城网格铁通随销人员向潇",
+          "小河区望城网格铁通随销人员陈玲",
+          "小河区望城网格铁通随销人员张勇",
+          "小河区望城网格铁通随销人员罗胜利",
+          "小河区望城网格铁通随销人员李中华",
+          "小河区望城网格铁通随销人员周先艳",
+          "小河区望城网格铁通随销人员邹家强",
+          "小河区望城网格铁通随销人员黄健",
+          "小河区望城网格铁通随销人员李万民",
+          "小河区望城网格铁通随销人员李万开",
+          "小河区望城网格铁通随销人员熊薪茗",
+          "小河区望城网格铁通随销人员赵喜建",
+          "小河区望城网格铁通随销人员何杰",
+          "小河区望城网格铁通随销人员张健",
+          "小河区望城网格铁通随销人员李阳光",
+          "小河区望城网格铁通随销人员熊美欢",
+          "小河区望城网格铁通随销人员张文文"
+        ],
+        "xinruwang": 2,
+        "dataitaocan": 0,
+        "fttr": 7,
+        "broadband": 5,
+        "xielu": 0,
+        "total": 14
+      },
+      {
+        "grid": "5小河望城网格",
+        "line": "4行销",
+        "orgCount": 11,
+        "orgs": [
+          "小河望城网格行销经理黄维平",
+          "小河望城网格行销经理龚圆淇",
+          "小河望城网格行销经理杨涛",
+          "小河望城网格行销经理葛运鲁",
+          "小河望城（铁通）网格行销经理李明辉",
+          "小河望城网格行销经理刘珊",
+          "小河望城网格行销经理吴华容",
+          "小河望城网格行销经理徐云洋",
+          "小河望城网格行销经理王荣菊",
+          "小河望城网格行销经理张洪艳",
+          "小河望城（铁通）网格行销经理史美晴"
+        ],
+        "xinruwang": 0,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 0
+      }
+    ],
+    "orgDetails": {
+      "2小河平桥兴隆网格": [
+        {
+          "org": "贵阳市小河区黄河路自办营业厅",
+          "xinruwang": 20,
+          "dataitaocan": 2,
+          "fttr": 2,
+          "broadband": 6,
+          "xielu": 0,
+          "total": 30
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理赵坤",
+          "xinruwang": 8,
+          "dataitaocan": 8,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 16
+        },
+        {
+          "org": "贵阳市经济开发区茂桓盛通讯设备经营部（小河区黄河路自营厅合作商）",
+          "xinruwang": 7,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 3,
+          "xielu": 1,
+          "total": 14
+        },
+        {
+          "org": "贵阳经开区永信通讯经营部（小河吴学刚代办点）",
+          "xinruwang": 8,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "贵阳市经济开发区茂华盛通讯设备经营部（小河陈依林俤代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员汪成涛",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "贵阳经开区佳诚通讯经营部（小河刘仕学代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗成俊",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员王江",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员冯旭剑",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理吕万",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经济开发区新凯来通讯经营部（小河平桥兴隆）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河平桥兴隆（铁通）网格行销经理桂萍",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市南明区顺时移动业务代理点（小河易姣代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济技术开发区万豪通讯店（小河欧春林代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员谭周斌",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员吴燕慧",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济开发区巨立雄通讯部（小河陈媄俤代办点）ZX",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1300-小河香江路片区宽服中心（铁通房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济技术开发区朱同贵移动通信经营部（小河朱同贵代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区宏顺通讯器材经营部（小河沈秀伟代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市花溪区祥旭通讯经营部(小河聂祥旭直销队)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理钟建兰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理万茂",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理赵亮",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理吴娜",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区雨田通讯器材经营部(个体工商户）（小河平桥兴隆）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员郭维波",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员李江",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员张建",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员付淑杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员谢亮",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员王维霞",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗雪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员程将军",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理张芸",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州森焱垚盛信息技术有限公司（小河万照燕直销队）ZX",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1311-小河缤纷广场片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员陈坤",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员邓皓聪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区万博通讯器材经营部（小河江山代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员徐刚",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员张思雨",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员尹泽芳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗山川",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员陈明贵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员秦志",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理聂祥义",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理黄和莉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员简慧敏",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗怡平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理陈健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员唐良成",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理聂祥聘",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理林日党",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理范明文",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员王新平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理李熹",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理唐敏",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理范阶",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员郑淇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员朱林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员邓唐兵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员肖思吉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员何玉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区启航星晨通讯经营部(小河吴承远代办点)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河公司平桥兴隆网格挽留专员胡佳利",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆（铁通）网格行销经理胡佳利",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆（铁通）网格行销经理胡艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "4小河金竹中曹网格": [
+        {
+          "org": "小河金竹中曹网格行销经理陈太琅",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员李洵",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 1,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员葛菘",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 1,
+          "total": 2
+        },
+        {
+          "org": "小河金竹中曹网格行销经理曾祥海",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市南明区四喜信息个体服务部（小河李栋琼代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济技术开发区黔丰通讯经营部（小河黄成兴代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员刘青云",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员李江惠",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳经济开发区圆御博通讯器材经营部(个体工商户）(小河何凤英代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市南明区范华炬通信器材经营部（小河甘荫塘汽配城）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济技术开发区小李手机店（小河李仁斌代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳顺骏忆通讯器材经营部（小河金竹）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳经开区瑞涵通讯器材经营部（小河林骏代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济技术开发区嘉润通讯器材经营部（小河肖俊峰代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳小河金竹118智能手机工厂店（小河胡兆明代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理晏燕",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理陈丹",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员胡先胜",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员罗晓凯",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理何腾",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员马润银",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员国庆",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员邹立",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员谭继鹃",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员邹建维",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员温格平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州恒珀峰通讯设备有限公司（小河李培代办点）ZX",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员杨旭",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理杨晓雪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理张沙沙",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理殷文慧",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员房陈林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1301-小河四方河路片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员居贵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理邹德建",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区鑫昌盛通讯设备经营部（小河孙磊磊直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理张雨雪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理李杭书",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理赖福建",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理徐艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员姚苇涛",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员袁培松",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理伍少琴",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员陶骆祥",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员王元武",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹（铁通）网格行销经理张扬",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员钟佳沅",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "5小河望城网格": [
+        {
+          "org": "小河区望城网格铁通随销人员赵喜建",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区望城网格铁通随销人员熊美欢",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "贵阳市南明区跃华虹通讯器材营业部（小河阙志宇代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区望城网格铁通随销人员向潇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区望城网格铁通随销人员陈玲",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "南明区开心数码产品经营部（小河望城）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区望城网格铁通随销人员叶越越",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区望城网格铁通随销人员黄健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区望城网格铁通随销人员张健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李阳光",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市南明区旻润通讯个体经营部（小河三江东）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州剑昆通信服务有限公司（小河OPPO厂商店）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区罗涛手机店(小河罗涛代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区移动通信绿苑特约代理店（小河沙冲路）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员张勇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员罗胜利",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李中华",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员周先艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理黄维平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理龚圆淇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理杨涛",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员邹家强",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理葛运鲁",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李万民",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李万开",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城（铁通）网格行销经理李明辉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理刘珊",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "南明区欣耀辉通讯科技服务经营部（小河望城）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理吴华容",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区乐自立通讯服务经营部（小望城网格）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理徐云洋",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员熊薪茗",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理王荣菊",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理张洪艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员何杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城（铁通）网格行销经理史美晴",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员张文文",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "1小河长江万科网格": [
+        {
+          "org": "贵阳市经开区华众明远电讯经营部（小河范华炬代办点）",
+          "xinruwang": 11,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员王维成",
+          "xinruwang": 2,
+          "dataitaocan": 2,
+          "fttr": 2,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 8
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理李祉兰",
+          "xinruwang": 4,
+          "dataitaocan": 4,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 8
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张玉模",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河区望城网格铁通随销人员熊美梦",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 2,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员贾崇庆",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 1,
+          "total": 4
+        },
+        {
+          "org": "小河长江万科网格行销经理韦雪",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张辉",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员高兴边",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "贵阳市经开区远达通讯经营部（小河韩廷圳代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳小河鑫磊公话亭（小河黄国芬代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵州锐步鑫通讯科技有限公司（小河雷剑直销队）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经开区恒点波通讯器材经营部（小河陈贵扬代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济开发区恒波通讯器材经营部（小河陈贵扬代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员赵世飞",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张建兵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河长江万科网格行销经理严章艳",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员汪嘉乐",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵州百讯通网络科技有限公司（小河刘天赐直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济技术开发区正泰通讯器材经营部（小河刘美华代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经开区小桥通讯器材经营部（小河何桥代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳小河晶晶通讯器材经营部（小河三江东）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经开区小范手机经营部（小河范华炬代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州华众明远电讯科技有限责任公司（小河转盘厂商）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1308-小河小城故事片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员冯灿辉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员杨明将",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员林洪友",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员荣昭宏",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员许树林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员熊美梦",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员何杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员李阳光",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员李祖新",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理李红永",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理邓云川",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理叶阳海",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理王美",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理李梦婷",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳经济开发区鑫光春晟数码经营部(小河小天才万科厂商店)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1309-小河美城新都片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员罗佳佳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员费学聪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州互助通移动通信网络服务有限公司(小河万科)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理周红梅",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员熊美欢",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员陈善钰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员谭安元",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理李维琴",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员夏宝彬",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员石启毫",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员冯学靖",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区启跃商贸行（小河田亚咪直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理刘光平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区聚信达通讯经营部（小河孙旭东直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理黄学友",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员刘飞翔",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员熊贤勇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理杨玉玲",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州艾思法电子商贸有限公司（小河万科广场店)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "3小河二戈寨网格": [
+        {
+          "org": "贵州沣范通讯设备有限公司（小河二戈引商）",
+          "xinruwang": 10,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 2,
+          "total": 12
+        },
+        {
+          "org": "小河二戈寨网格行销经理谭玲",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员杨志满",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河二戈寨网格行销经理莫以琼",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 1,
+          "total": 3
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员范开军",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员胡仕健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经济开发区鸿蒙手机店（小河朱川代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员冯超",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员李红林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市南明区思源通信器材经营部（小河杨光花代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区韦永英通讯经营部（小河吴德芬代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1310-小河二戈寨片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "南明高胜通讯器材经营部（小河张雷代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区文辰通讯经营部(小河邱埝扬代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州亿鸿盛通讯科技有限公司贵阳分公司（小河珠显村）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理兰淞瑞",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员李伟",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区欧泰通讯设备经营部（小河）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理李江娥",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州裕泰通讯科技有限公司（小河石盼盼代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理张泉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员岑菊芬",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理范美迪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理赵敏琼",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州瑶雅科技有限公司（小河廖丹平直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理田锦豪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理顾啟容",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员佟俊毫",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员熊泽辉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理周瑾慧",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区移鑫通通讯经营部（小河徐艳直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理张承贵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员黄启勇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州众智高达通讯科技有限公司（小河严勇直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理龙依晨",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员汤绍江",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理邓豪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员周先艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理龙翔",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理周贞杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理李正伟",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ]
+    }
+  },
+  "monthly": {
+    "overview": {
+      "xinruwang": 659,
+      "dataitaocan": 150,
+      "fttr": 172,
+      "broadband": 288,
+      "xielu": 35
+    },
+    "gridData": [
+      {
+        "grid": "2小河平桥兴隆网格",
+        "xinruwang": 269,
+        "dataitaocan": 63,
+        "fttr": 41,
+        "broadband": 105,
+        "xielu": 15,
+        "total": 493
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "xinruwang": 154,
+        "dataitaocan": 36,
+        "fttr": 42,
+        "broadband": 71,
+        "xielu": 2,
+        "total": 305
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "xinruwang": 125,
+        "dataitaocan": 16,
+        "fttr": 23,
+        "broadband": 44,
+        "xielu": 9,
+        "total": 217
+      },
+      {
+        "grid": "5小河望城网格",
+        "xinruwang": 56,
+        "dataitaocan": 18,
+        "fttr": 41,
+        "broadband": 31,
+        "xielu": 3,
+        "total": 149
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "xinruwang": 50,
+        "dataitaocan": 17,
+        "fttr": 24,
+        "broadband": 34,
+        "xielu": 6,
+        "total": 131
+      }
+    ],
+    "lineData": [
+      {
+        "line": "3铁通",
+        "xinruwang": 125,
+        "dataitaocan": 49,
+        "fttr": 124,
+        "broadband": 152,
+        "xielu": 10,
+        "total": 460
+      },
+      {
+        "line": "1重要",
+        "xinruwang": 274,
+        "dataitaocan": 27,
+        "fttr": 24,
+        "broadband": 64,
+        "xielu": 12,
+        "total": 401
+      },
+      {
+        "line": "2中腰",
+        "xinruwang": 163,
+        "dataitaocan": 15,
+        "fttr": 10,
+        "broadband": 36,
+        "xielu": 0,
+        "total": 224
+      },
+      {
+        "line": "4行销",
+        "xinruwang": 92,
+        "dataitaocan": 59,
+        "fttr": 13,
+        "broadband": 33,
+        "xielu": 13,
+        "total": 210
+      }
+    ],
+    "gridLineData": [
+      {
+        "grid": "1小河长江万科网格",
+        "line": "1重要",
+        "orgCount": 3,
+        "orgs": [
+          "贵阳市经开区华众明远电讯经营部（小河范华炬代办点）",
+          "贵阳市经开区小范手机经营部（小河范华炬代办点）",
+          "贵州华众明远电讯科技有限责任公司（小河转盘厂商）"
+        ],
+        "xinruwang": 55,
+        "dataitaocan": 0,
+        "fttr": 1,
+        "broadband": 4,
+        "xielu": 0,
+        "total": 60
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "line": "2中腰",
+        "orgCount": 14,
+        "orgs": [
+          "贵阳市经开区远达通讯经营部（小河韩廷圳代办点）",
+          "贵阳小河鑫磊公话亭（小河黄国芬代办点）",
+          "贵州百讯通网络科技有限公司（小河刘天赐直销队）",
+          "贵阳市经济技术开发区正泰通讯器材经营部（小河刘美华代办点）",
+          "贵阳市经开区小桥通讯器材经营部（小河何桥代办点）",
+          "贵阳小河晶晶通讯器材经营部（小河三江东）",
+          "贵阳市经开区恒点波通讯器材经营部（小河陈贵扬代办点）",
+          "贵阳市经济开发区恒波通讯器材经营部（小河陈贵扬代办点）",
+          "贵州锐步鑫通讯科技有限公司（小河雷剑直销队）",
+          "贵阳经济开发区鑫光春晟数码经营部(小河小天才万科厂商店)",
+          "贵州互助通移动通信网络服务有限公司(小河万科)",
+          "贵阳市南明区启跃商贸行（小河田亚咪直销队）",
+          "贵阳市经济开发区聚信达通讯经营部（小河孙旭东直销队）",
+          "贵州艾思法电子商贸有限公司（小河万科广场店)"
+        ],
+        "xinruwang": 33,
+        "dataitaocan": 3,
+        "fttr": 3,
+        "broadband": 12,
+        "xielu": 0,
+        "total": 51
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "line": "3铁通",
+        "orgCount": 31,
+        "orgs": [
+          "中移铁通贵阳分公司1308-小河小城故事片区宽服中心（社会房产）",
+          "小河区长江万科网格铁通随销人员冯灿辉",
+          "小河区长江万科网格铁通随销人员张玉模",
+          "小河区长江万科网格铁通随销人员王维成",
+          "小河区长江万科网格铁通随销人员杨明将",
+          "小河区长江万科网格铁通随销人员林洪友",
+          "小河区长江万科网格铁通随销人员荣昭宏",
+          "小河区长江万科网格铁通随销人员许树林",
+          "小河区长江万科网格铁通随销人员赵世飞",
+          "小河区长江万科网格铁通随销人员贾崇庆",
+          "小河区长江万科网格铁通随销人员张健",
+          "小河区长江万科网格铁通随销人员熊美梦",
+          "小河区长江万科网格铁通随销人员何杰",
+          "小河区长江万科网格铁通随销人员李阳光",
+          "小河区长江万科网格铁通随销人员高兴边",
+          "小河区长江万科网格铁通随销人员李祖新",
+          "小河区长江万科网格铁通随销人员张建兵",
+          "小河区长江万科网格铁通随销人员汪嘉乐",
+          "中移铁通贵阳分公司1309-小河美城新都片区宽服中心（社会房产）",
+          "小河区长江万科网格铁通随销人员罗佳佳",
+          "小河区长江万科网格铁通随销人员费学聪",
+          "小河区望城网格铁通随销人员熊美梦",
+          "小河区长江万科网格铁通随销人员熊美欢",
+          "小河区长江万科网格铁通随销人员陈善钰",
+          "小河区长江万科网格铁通随销人员谭安元",
+          "小河区长江万科网格铁通随销人员夏宝彬",
+          "小河区长江万科网格铁通随销人员石启毫",
+          "小河区长江万科网格铁通随销人员冯学靖",
+          "小河区长江万科网格铁通随销人员张辉",
+          "小河区长江万科网格铁通随销人员刘飞翔",
+          "小河区长江万科网格铁通随销人员熊贤勇"
+        ],
+        "xinruwang": 41,
+        "dataitaocan": 17,
+        "fttr": 37,
+        "broadband": 51,
+        "xielu": 1,
+        "total": 147
+      },
+      {
+        "grid": "1小河长江万科网格",
+        "line": "4行销",
+        "orgCount": 13,
+        "orgs": [
+          "小河长江万科网格行销经理李红永",
+          "小河长江万科网格行销经理邓云川",
+          "小河长江万科网格行销经理严章艳",
+          "小河长江万科网格行销经理叶阳海",
+          "小河长江万科网格行销经理王美",
+          "小河长江万科网格行销经理李梦婷",
+          "小河长江万科网格行销经理韦雪",
+          "小河长江万科网格行销经理周红梅",
+          "小河长江万科网格行销经理李维琴",
+          "小河长江万科网格行销经理刘光平",
+          "小河平桥兴隆网格行销经理黄学友",
+          "小河平桥兴隆网格行销经理李祉兰",
+          "小河长江万科网格行销经理杨玉玲"
+        ],
+        "xinruwang": 25,
+        "dataitaocan": 16,
+        "fttr": 1,
+        "broadband": 4,
+        "xielu": 1,
+        "total": 47
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "1重要",
+        "orgCount": 5,
+        "orgs": [
+          "贵阳市经济开发区茂华盛通讯设备经营部（小河陈依林俤代办点）",
+          "贵阳市小河区黄河路自办营业厅",
+          "贵阳市经济开发区茂桓盛通讯设备经营部（小河区黄河路自营厅合作商）",
+          "贵阳市经济开发区巨立雄通讯部（小河陈媄俤代办点）ZX",
+          "贵州森焱垚盛信息技术有限公司（小河万照燕直销队）ZX"
+        ],
+        "xinruwang": 148,
+        "dataitaocan": 25,
+        "fttr": 22,
+        "broadband": 54,
+        "xielu": 10,
+        "total": 259
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "2中腰",
+        "orgCount": 11,
+        "orgs": [
+          "贵阳市南明区顺时移动业务代理点（小河易姣代办点）",
+          "贵阳市经济技术开发区朱同贵移动通信经营部（小河朱同贵代办点）",
+          "贵阳市经济技术开发区万豪通讯店（小河欧春林代办点）",
+          "贵阳经开区永信通讯经营部（小河吴学刚代办点）",
+          "贵阳经开区佳诚通讯经营部（小河刘仕学代办点）",
+          "贵阳市经济开发区宏顺通讯器材经营部（小河沈秀伟代办点）",
+          "贵阳市花溪区祥旭通讯经营部(小河聂祥旭直销队)",
+          "贵阳市经济开发区雨田通讯器材经营部(个体工商户）（小河平桥兴隆）",
+          "贵阳市经济开发区万博通讯器材经营部（小河江山代办点）",
+          "贵阳市经济开发区启航星晨通讯经营部(小河吴承远代办点)",
+          "贵阳市经济开发区新凯来通讯经营部（小河平桥兴隆）"
+        ],
+        "xinruwang": 77,
+        "dataitaocan": 8,
+        "fttr": 3,
+        "broadband": 15,
+        "xielu": 0,
+        "total": 103
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "3铁通",
+        "orgCount": 36,
+        "orgs": [
+          "中移铁通贵阳分公司1300-小河香江路片区宽服中心（铁通房产）",
+          "小河区平桥兴隆网格铁通随销人员冯旭剑",
+          "小河区平桥兴隆网格铁通随销人员郭维波",
+          "小河区平桥兴隆网格铁通随销人员李江",
+          "小河区平桥兴隆网格铁通随销人员谭周斌",
+          "小河区平桥兴隆网格铁通随销人员罗成俊",
+          "小河区平桥兴隆网格铁通随销人员张建",
+          "小河区平桥兴隆网格铁通随销人员付淑杰",
+          "小河区平桥兴隆网格铁通随销人员汪成涛",
+          "小河区平桥兴隆网格铁通随销人员谢亮",
+          "小河区金竹中曹网格铁通随销人员王维霞",
+          "小河区平桥兴隆网格铁通随销人员罗雪",
+          "小河区平桥兴隆网格铁通随销人员程将军",
+          "中移铁通贵阳分公司1311-小河缤纷广场片区宽服中心（社会房产）",
+          "小河区平桥兴隆网格铁通随销人员陈坤",
+          "小河区平桥兴隆网格铁通随销人员邓皓聪",
+          "小河区平桥兴隆网格铁通随销人员徐刚",
+          "小河区平桥兴隆网格铁通随销人员张思雨",
+          "小河区平桥兴隆网格铁通随销人员尹泽芳",
+          "小河区平桥兴隆网格铁通随销人员罗山川",
+          "小河区平桥兴隆网格铁通随销人员陈明贵",
+          "小河区平桥兴隆网格铁通随销人员秦志",
+          "小河区平桥兴隆网格铁通随销人员简慧敏",
+          "小河区平桥兴隆网格铁通随销人员吴燕慧",
+          "小河区平桥兴隆网格铁通随销人员罗怡平",
+          "小河区平桥兴隆网格铁通随销人员唐良成",
+          "小河区平桥兴隆网格铁通随销人员王新平",
+          "小河区平桥兴隆网格铁通随销人员郑淇",
+          "小河区平桥兴隆网格铁通随销人员王江",
+          "小河区平桥兴隆网格铁通随销人员朱林",
+          "小河区平桥兴隆网格铁通随销人员邓唐兵",
+          "小河区平桥兴隆网格铁通随销人员肖思吉",
+          "小河区平桥兴隆网格铁通随销人员何玉",
+          "小河平桥兴隆（铁通）网格行销经理桂萍",
+          "小河平桥兴隆（铁通）网格行销经理胡佳利",
+          "小河平桥兴隆（铁通）网格行销经理胡艳"
+        ],
+        "xinruwang": 26,
+        "dataitaocan": 12,
+        "fttr": 15,
+        "broadband": 33,
+        "xielu": 2,
+        "total": 88
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "4行销",
+        "orgCount": 16,
+        "orgs": [
+          "小河平桥兴隆网格行销经理钟建兰",
+          "小河平桥兴隆网格行销经理万茂",
+          "小河平桥兴隆网格行销经理赵亮",
+          "小河平桥兴隆网格行销经理吴娜",
+          "小河平桥兴隆网格行销经理吕万",
+          "小河平桥兴隆网格行销经理张芸",
+          "小河平桥兴隆网格行销经理聂祥义",
+          "小河平桥兴隆网格行销经理黄和莉",
+          "小河平桥兴隆网格行销经理陈健",
+          "小河平桥兴隆网格行销经理聂祥聘",
+          "小河平桥兴隆网格行销经理林日党",
+          "小河平桥兴隆网格行销经理范明文",
+          "小河平桥兴隆网格行销经理赵坤",
+          "小河平桥兴隆网格行销经理李熹",
+          "小河平桥兴隆网格行销经理唐敏",
+          "小河平桥兴隆网格行销经理范阶"
+        ],
+        "xinruwang": 18,
+        "dataitaocan": 18,
+        "fttr": 1,
+        "broadband": 3,
+        "xielu": 3,
+        "total": 43
+      },
+      {
+        "grid": "2小河平桥兴隆网格",
+        "line": "未分类",
+        "orgCount": 1,
+        "orgs": [
+          "小河公司平桥兴隆网格挽留专员胡佳利"
+        ],
+        "xinruwang": 0,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 0,
+        "xielu": 0,
+        "total": 0
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "1重要",
+        "orgCount": 1,
+        "orgs": [
+          "贵州沣范通讯设备有限公司（小河二戈引商）"
+        ],
+        "xinruwang": 69,
+        "dataitaocan": 1,
+        "fttr": 0,
+        "broadband": 5,
+        "xielu": 2,
+        "total": 77
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "2中腰",
+        "orgCount": 11,
+        "orgs": [
+          "贵阳市南明区思源通信器材经营部（小河杨光花代办点）",
+          "贵阳市南明区韦永英通讯经营部（小河吴德芬代办点）",
+          "南明高胜通讯器材经营部（小河张雷代办点）",
+          "贵阳市经济开发区鸿蒙手机店（小河朱川代办点）",
+          "贵阳市南明区文辰通讯经营部(小河邱埝扬代办点）",
+          "贵州亿鸿盛通讯科技有限公司贵阳分公司（小河珠显村）",
+          "贵阳市经济开发区欧泰通讯设备经营部（小河）",
+          "贵州裕泰通讯科技有限公司（小河石盼盼代办点）",
+          "贵州瑶雅科技有限公司（小河廖丹平直销队）",
+          "贵阳市经济开发区移鑫通通讯经营部（小河徐艳直销队）",
+          "贵州众智高达通讯科技有限公司（小河严勇直销队）"
+        ],
+        "xinruwang": 25,
+        "dataitaocan": 3,
+        "fttr": 0,
+        "broadband": 2,
+        "xielu": 0,
+        "total": 30
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "3铁通",
+        "orgCount": 17,
+        "orgs": [
+          "中移铁通贵阳分公司1310-小河二戈寨片区宽服中心（社会房产）",
+          "小河区二戈寨网格铁通随销人员冯超",
+          "小河区二戈寨网格铁通随销人员范开军",
+          "小河区二戈寨网格铁通随销人员胡仕健",
+          "小河区二戈寨网格铁通随销人员李伟",
+          "小河区二戈寨网格铁通随销人员杨志满",
+          "小河区二戈寨网格铁通随销人员岑菊芬",
+          "小河区二戈寨网格铁通随销人员李红林",
+          "小河区二戈寨网格铁通随销人员佟俊毫",
+          "小河区二戈寨网格铁通随销人员熊泽辉",
+          "小河区二戈寨网格铁通随销人员黄启勇",
+          "小河区二戈寨网格铁通随销人员汤绍江",
+          "小河二戈寨（铁通）网格行销经理邓豪",
+          "小河区二戈寨网格铁通随销人员周先艳",
+          "小河二戈寨（铁通）网格行销经理龙翔",
+          "小河二戈寨（铁通）网格行销经理周贞杰",
+          "小河二戈寨（铁通）网格行销经理李正伟"
+        ],
+        "xinruwang": 10,
+        "dataitaocan": 5,
+        "fttr": 16,
+        "broadband": 21,
+        "xielu": 0,
+        "total": 52
+      },
+      {
+        "grid": "3小河二戈寨网格",
+        "line": "4行销",
+        "orgCount": 12,
+        "orgs": [
+          "小河二戈寨网格行销经理谭玲",
+          "小河二戈寨网格行销经理莫以琼",
+          "小河二戈寨网格行销经理兰淞瑞",
+          "小河二戈寨网格行销经理李江娥",
+          "小河二戈寨网格行销经理张泉",
+          "小河二戈寨网格行销经理范美迪",
+          "小河二戈寨网格行销经理赵敏琼",
+          "小河二戈寨网格行销经理田锦豪",
+          "小河二戈寨网格行销经理顾啟容",
+          "小河二戈寨网格行销经理周瑾慧",
+          "小河二戈寨网格行销经理张承贵",
+          "小河二戈寨网格行销经理龙依晨"
+        ],
+        "xinruwang": 21,
+        "dataitaocan": 7,
+        "fttr": 7,
+        "broadband": 16,
+        "xielu": 7,
+        "total": 58
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "1重要",
+        "orgCount": 2,
+        "orgs": [
+          "贵阳市南明区范华炬通信器材经营部（小河甘荫塘汽配城）",
+          "贵州恒珀峰通讯设备有限公司（小河李培代办点）ZX"
+        ],
+        "xinruwang": 2,
+        "dataitaocan": 1,
+        "fttr": 1,
+        "broadband": 1,
+        "xielu": 0,
+        "total": 5
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "2中腰",
+        "orgCount": 9,
+        "orgs": [
+          "贵阳市南明区四喜信息个体服务部（小河李栋琼代办点）",
+          "贵阳市经济技术开发区小李手机店（小河李仁斌代办点）",
+          "贵阳顺骏忆通讯器材经营部（小河金竹）",
+          "贵阳经开区瑞涵通讯器材经营部（小河林骏代办点）",
+          "贵阳市经济技术开发区嘉润通讯器材经营部（小河肖俊峰代办点）",
+          "贵阳小河金竹118智能手机工厂店（小河胡兆明代办点）",
+          "贵阳市经济技术开发区黔丰通讯经营部（小河黄成兴代办点）",
+          "贵阳经济开发区圆御博通讯器材经营部(个体工商户）(小河何凤英代办点）",
+          "贵阳市经济开发区鑫昌盛通讯设备经营部（小河孙磊磊直销队）"
+        ],
+        "xinruwang": 11,
+        "dataitaocan": 0,
+        "fttr": 0,
+        "broadband": 3,
+        "xielu": 0,
+        "total": 14
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "3铁通",
+        "orgCount": 23,
+        "orgs": [
+          "小河区金竹中曹网格铁通随销人员刘青云",
+          "小河区金竹中曹网格铁通随销人员李洵",
+          "小河区金竹中曹网格铁通随销人员葛菘",
+          "小河区金竹中曹网格铁通随销人员胡先胜",
+          "小河区金竹中曹网格铁通随销人员罗晓凯",
+          "小河区金竹中曹网格铁通随销人员马润银",
+          "小河区金竹中曹网格铁通随销人员国庆",
+          "小河区金竹中曹网格铁通随销人员邹立",
+          "小河区金竹中曹网格铁通随销人员谭继鹃",
+          "小河区金竹中曹网格铁通随销人员邹建维",
+          "小河区金竹中曹网格铁通随销人员温格平",
+          "小河区金竹中曹网格铁通随销人员李江惠",
+          "小河区金竹中曹网格铁通随销人员杨旭",
+          "小河区金竹中曹网格铁通随销人员房陈林",
+          "中移铁通贵阳分公司1301-小河四方河路片区宽服中心（社会房产）",
+          "小河区金竹中曹网格铁通随销人员居贵",
+          "小河区金竹中曹网格铁通随销人员姚苇涛",
+          "小河区金竹中曹网格铁通随销人员袁培松",
+          "小河金竹中曹网格行销经理伍少琴",
+          "小河区金竹中曹网格铁通随销人员陶骆祥",
+          "小河区金竹中曹网格铁通随销人员王元武",
+          "小河金竹中曹（铁通）网格行销经理张扬",
+          "小河区金竹中曹网格铁通随销人员钟佳沅"
+        ],
+        "xinruwang": 23,
+        "dataitaocan": 11,
+        "fttr": 19,
+        "broadband": 21,
+        "xielu": 4,
+        "total": 78
+      },
+      {
+        "grid": "4小河金竹中曹网格",
+        "line": "4行销",
+        "orgCount": 13,
+        "orgs": [
+          "小河金竹中曹网格行销经理陈太琅",
+          "小河金竹中曹网格行销经理晏燕",
+          "小河金竹中曹网格行销经理陈丹",
+          "小河金竹中曹网格行销经理何腾",
+          "小河金竹中曹网格行销经理杨晓雪",
+          "小河金竹中曹网格行销经理张沙沙",
+          "小河金竹中曹网格行销经理殷文慧",
+          "小河金竹中曹网格行销经理曾祥海",
+          "小河金竹中曹网格行销经理邹德建",
+          "小河金竹中曹网格行销经理张雨雪",
+          "小河金竹中曹网格行销经理李杭书",
+          "小河金竹中曹网格行销经理赖福建",
+          "小河金竹中曹网格行销经理徐艳"
+        ],
+        "xinruwang": 14,
+        "dataitaocan": 5,
+        "fttr": 4,
+        "broadband": 9,
+        "xielu": 2,
+        "total": 34
+      },
+      {
+        "grid": "5小河望城网格",
+        "line": "2中腰",
+        "orgCount": 8,
+        "orgs": [
+          "贵阳市南明区旻润通讯个体经营部（小河三江东）",
+          "贵州剑昆通信服务有限公司（小河OPPO厂商店）",
+          "贵阳市南明区罗涛手机店(小河罗涛代办点）",
+          "南明区开心数码产品经营部（小河望城）",
+          "贵阳市南明区移动通信绿苑特约代理店（小河沙冲路）",
+          "贵阳市南明区跃华虹通讯器材营业部（小河阙志宇代办点）",
+          "南明区欣耀辉通讯科技服务经营部（小河望城）",
+          "贵阳市南明区乐自立通讯服务经营部（小望城网格）"
+        ],
+        "xinruwang": 17,
+        "dataitaocan": 1,
+        "fttr": 4,
+        "broadband": 4,
+        "xielu": 0,
+        "total": 26
+      },
+      {
+        "grid": "5小河望城网格",
+        "line": "3铁通",
+        "orgCount": 18,
+        "orgs": [
+          "小河区望城网格铁通随销人员叶越越",
+          "小河区望城网格铁通随销人员向潇",
+          "小河区望城网格铁通随销人员陈玲",
+          "小河区望城网格铁通随销人员张勇",
+          "小河区望城网格铁通随销人员罗胜利",
+          "小河区望城网格铁通随销人员李中华",
+          "小河区望城网格铁通随销人员周先艳",
+          "小河区望城网格铁通随销人员邹家强",
+          "小河区望城网格铁通随销人员黄健",
+          "小河区望城网格铁通随销人员李万民",
+          "小河区望城网格铁通随销人员李万开",
+          "小河区望城网格铁通随销人员熊薪茗",
+          "小河区望城网格铁通随销人员赵喜建",
+          "小河区望城网格铁通随销人员何杰",
+          "小河区望城网格铁通随销人员张健",
+          "小河区望城网格铁通随销人员李阳光",
+          "小河区望城网格铁通随销人员熊美欢",
+          "小河区望城网格铁通随销人员张文文"
+        ],
+        "xinruwang": 25,
+        "dataitaocan": 4,
+        "fttr": 37,
+        "broadband": 26,
+        "xielu": 3,
+        "total": 95
+      },
+      {
+        "grid": "5小河望城网格",
+        "line": "4行销",
+        "orgCount": 11,
+        "orgs": [
+          "小河望城网格行销经理黄维平",
+          "小河望城网格行销经理龚圆淇",
+          "小河望城网格行销经理杨涛",
+          "小河望城网格行销经理葛运鲁",
+          "小河望城（铁通）网格行销经理李明辉",
+          "小河望城网格行销经理刘珊",
+          "小河望城网格行销经理吴华容",
+          "小河望城网格行销经理徐云洋",
+          "小河望城网格行销经理王荣菊",
+          "小河望城网格行销经理张洪艳",
+          "小河望城（铁通）网格行销经理史美晴"
+        ],
+        "xinruwang": 14,
+        "dataitaocan": 13,
+        "fttr": 0,
+        "broadband": 1,
+        "xielu": 0,
+        "total": 28
+      }
+    ],
+    "orgDetails": {
+      "2小河平桥兴隆网格": [
+        {
+          "org": "贵阳市小河区黄河路自办营业厅",
+          "xinruwang": 77,
+          "dataitaocan": 8,
+          "fttr": 13,
+          "broadband": 26,
+          "xielu": 9,
+          "total": 133
+        },
+        {
+          "org": "贵阳市经济开发区茂桓盛通讯设备经营部（小河区黄河路自营厅合作商）",
+          "xinruwang": 62,
+          "dataitaocan": 16,
+          "fttr": 7,
+          "broadband": 23,
+          "xielu": 1,
+          "total": 109
+        },
+        {
+          "org": "贵阳经开区永信通讯经营部（小河吴学刚代办点）",
+          "xinruwang": 50,
+          "dataitaocan": 5,
+          "fttr": 0,
+          "broadband": 9,
+          "xielu": 0,
+          "total": 64
+        },
+        {
+          "org": "贵阳经开区佳诚通讯经营部（小河刘仕学代办点）",
+          "xinruwang": 19,
+          "dataitaocan": 3,
+          "fttr": 3,
+          "broadband": 4,
+          "xielu": 0,
+          "total": 29
+        },
+        {
+          "org": "贵阳市经济开发区茂华盛通讯设备经营部（小河陈依林俤代办点）",
+          "xinruwang": 9,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 5,
+          "xielu": 0,
+          "total": 16
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理赵坤",
+          "xinruwang": 8,
+          "dataitaocan": 8,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 16
+        },
+        {
+          "org": "小河平桥兴隆（铁通）网格行销经理胡艳",
+          "xinruwang": 7,
+          "dataitaocan": 7,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 14
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员汪成涛",
+          "xinruwang": 3,
+          "dataitaocan": 3,
+          "fttr": 3,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗山川",
+          "xinruwang": 4,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 3,
+          "xielu": 2,
+          "total": 12
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理范明文",
+          "xinruwang": 6,
+          "dataitaocan": 6,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理吕万",
+          "xinruwang": 3,
+          "dataitaocan": 3,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 2,
+          "total": 10
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员朱林",
+          "xinruwang": 2,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 5,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员谭周斌",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 2,
+          "broadband": 4,
+          "xielu": 0,
+          "total": 7
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗成俊",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 2,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 7
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员冯旭剑",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理钟建兰",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 1,
+          "total": 5
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员张建",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员王江",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "贵阳市经济技术开发区万豪通讯店（小河欧春林代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "贵阳市南明区顺时移动业务代理点（小河易姣代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员李江",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河平桥兴隆（铁通）网格行销经理桂萍",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员吴燕慧",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经济开发区新凯来通讯经营部（小河平桥兴隆）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经济开发区宏顺通讯器材经营部（小河沈秀伟代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵州森焱垚盛信息技术有限公司（小河万照燕直销队）ZX",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员王新平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员郑淇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河平桥兴隆（铁通）网格行销经理胡佳利",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济开发区巨立雄通讯部（小河陈媄俤代办点）ZX",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1300-小河香江路片区宽服中心（铁通房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济技术开发区朱同贵移动通信经营部（小河朱同贵代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市花溪区祥旭通讯经营部(小河聂祥旭直销队)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理万茂",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理赵亮",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理吴娜",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区雨田通讯器材经营部(个体工商户）（小河平桥兴隆）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员郭维波",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员付淑杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员谢亮",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员王维霞",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗雪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员程将军",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理张芸",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1311-小河缤纷广场片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员陈坤",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员邓皓聪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区万博通讯器材经营部（小河江山代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员徐刚",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员张思雨",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员尹泽芳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员陈明贵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员秦志",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理聂祥义",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理黄和莉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员简慧敏",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员罗怡平",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理陈健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员唐良成",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理聂祥聘",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理林日党",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理李熹",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理唐敏",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理范阶",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员邓唐兵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员肖思吉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区平桥兴隆网格铁通随销人员何玉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区启航星晨通讯经营部(小河吴承远代办点)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河公司平桥兴隆网格挽留专员胡佳利",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "4小河金竹中曹网格": [
+        {
+          "org": "小河金竹中曹网格行销经理伍少琴",
+          "xinruwang": 4,
+          "dataitaocan": 3,
+          "fttr": 2,
+          "broadband": 5,
+          "xielu": 1,
+          "total": 15
+        },
+        {
+          "org": "小河金竹中曹（铁通）网格行销经理张扬",
+          "xinruwang": 6,
+          "dataitaocan": 6,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员李洵",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 4,
+          "broadband": 4,
+          "xielu": 1,
+          "total": 11
+        },
+        {
+          "org": "小河金竹中曹网格行销经理张沙沙",
+          "xinruwang": 3,
+          "dataitaocan": 2,
+          "fttr": 1,
+          "broadband": 3,
+          "xielu": 2,
+          "total": 11
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员李江惠",
+          "xinruwang": 4,
+          "dataitaocan": 0,
+          "fttr": 3,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 10
+        },
+        {
+          "org": "小河金竹中曹网格行销经理曾祥海",
+          "xinruwang": 4,
+          "dataitaocan": 2,
+          "fttr": 1,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 10
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员刘青云",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 5,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 8
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员葛菘",
+          "xinruwang": 2,
+          "dataitaocan": 1,
+          "fttr": 3,
+          "broadband": 1,
+          "xielu": 1,
+          "total": 8
+        },
+        {
+          "org": "小河金竹中曹网格行销经理陈太琅",
+          "xinruwang": 3,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "贵州恒珀峰通讯设备有限公司（小河李培代办点）ZX",
+          "xinruwang": 2,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河金竹中曹网格行销经理邹德建",
+          "xinruwang": 4,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员胡先胜",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "贵阳小河金竹118智能手机工厂店（小河胡兆明代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "贵阳经济开发区圆御博通讯器材经营部(个体工商户）(小河何凤英代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "贵阳市南明区四喜信息个体服务部（小河李栋琼代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳经开区瑞涵通讯器材经营部（小河林骏代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经济技术开发区嘉润通讯器材经营部（小河肖俊峰代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河金竹中曹网格行销经理何腾",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员马润银",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员国庆",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员温格平",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 1,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员房陈林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员姚苇涛",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经济技术开发区黔丰通讯经营部（小河黄成兴代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济开发区鑫昌盛通讯设备经营部（小河孙磊磊直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市南明区范华炬通信器材经营部（小河甘荫塘汽配城）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济技术开发区小李手机店（小河李仁斌代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳顺骏忆通讯器材经营部（小河金竹）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理晏燕",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理陈丹",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员罗晓凯",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员邹立",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员谭继鹃",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员邹建维",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员杨旭",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理杨晓雪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理殷文慧",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1301-小河四方河路片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员居贵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理张雨雪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理李杭书",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理赖福建",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河金竹中曹网格行销经理徐艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员袁培松",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员陶骆祥",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员王元武",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区金竹中曹网格铁通随销人员钟佳沅",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "5小河望城网格": [
+        {
+          "org": "小河区望城网格铁通随销人员李阳光",
+          "xinruwang": 4,
+          "dataitaocan": 0,
+          "fttr": 10,
+          "broadband": 4,
+          "xielu": 2,
+          "total": 20
+        },
+        {
+          "org": "小河区望城网格铁通随销人员向潇",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 6,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河区望城网格铁通随销人员陈玲",
+          "xinruwang": 4,
+          "dataitaocan": 0,
+          "fttr": 5,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河望城网格行销经理葛运鲁",
+          "xinruwang": 6,
+          "dataitaocan": 6,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河望城网格行销经理王荣菊",
+          "xinruwang": 6,
+          "dataitaocan": 6,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河区望城网格铁通随销人员张健",
+          "xinruwang": 3,
+          "dataitaocan": 1,
+          "fttr": 5,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "贵阳市南明区罗涛手机店(小河罗涛代办点）",
+          "xinruwang": 6,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 11
+        },
+        {
+          "org": "小河区望城网格铁通随销人员赵喜建",
+          "xinruwang": 5,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 10
+        },
+        {
+          "org": "贵阳市南明区跃华虹通讯器材营业部（小河阙志宇代办点）",
+          "xinruwang": 7,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李中华",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 3,
+          "broadband": 5,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "小河区望城网格铁通随销人员熊美欢",
+          "xinruwang": 3,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 1,
+          "total": 7
+        },
+        {
+          "org": "南明区开心数码产品经营部（小河望城）",
+          "xinruwang": 4,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "小河区望城网格铁通随销人员黄健",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河区望城网格铁通随销人员叶越越",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河望城（铁通）网格行销经理李明辉",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区望城网格铁通随销人员何杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 2,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区望城网格铁通随销人员熊薪茗",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河望城网格行销经理黄维平",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市南明区旻润通讯个体经营部（小河三江东）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州剑昆通信服务有限公司（小河OPPO厂商店）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区移动通信绿苑特约代理店（小河沙冲路）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员张勇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员罗胜利",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员周先艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理龚圆淇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理杨涛",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员邹家强",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李万民",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员李万开",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理刘珊",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "南明区欣耀辉通讯科技服务经营部（小河望城）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理吴华容",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区乐自立通讯服务经营部（小望城网格）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理徐云洋",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城网格行销经理张洪艳",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河望城（铁通）网格行销经理史美晴",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区望城网格铁通随销人员张文文",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "1小河长江万科网格": [
+        {
+          "org": "贵阳市经开区华众明远电讯经营部（小河范华炬代办点）",
+          "xinruwang": 49,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 53
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员王维成",
+          "xinruwang": 7,
+          "dataitaocan": 7,
+          "fttr": 6,
+          "broadband": 6,
+          "xielu": 0,
+          "total": 26
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张玉模",
+          "xinruwang": 5,
+          "dataitaocan": 2,
+          "fttr": 5,
+          "broadband": 6,
+          "xielu": 0,
+          "total": 18
+        },
+        {
+          "org": "贵阳市经济技术开发区正泰通讯器材经营部（小河刘美华代办点）",
+          "xinruwang": 11,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 14
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员夏宝彬",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 7,
+          "broadband": 5,
+          "xielu": 0,
+          "total": 14
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张辉",
+          "xinruwang": 5,
+          "dataitaocan": 2,
+          "fttr": 3,
+          "broadband": 4,
+          "xielu": 0,
+          "total": 14
+        },
+        {
+          "org": "小河长江万科网格行销经理刘光平",
+          "xinruwang": 7,
+          "dataitaocan": 3,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理黄学友",
+          "xinruwang": 6,
+          "dataitaocan": 6,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河平桥兴隆网格行销经理李祉兰",
+          "xinruwang": 6,
+          "dataitaocan": 6,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 12
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员罗佳佳",
+          "xinruwang": 4,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 4,
+          "xielu": 0,
+          "total": 11
+        },
+        {
+          "org": "小河区望城网格铁通随销人员熊美梦",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 3,
+          "broadband": 5,
+          "xielu": 0,
+          "total": 10
+        },
+        {
+          "org": "贵阳小河鑫磊公话亭（小河黄国芬代办点）",
+          "xinruwang": 7,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员林洪友",
+          "xinruwang": 2,
+          "dataitaocan": 1,
+          "fttr": 3,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员高兴边",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 4,
+          "xielu": 0,
+          "total": 8
+        },
+        {
+          "org": "贵州艾思法电子商贸有限公司（小河万科广场店)",
+          "xinruwang": 2,
+          "dataitaocan": 2,
+          "fttr": 0,
+          "broadband": 4,
+          "xielu": 0,
+          "total": 8
+        },
+        {
+          "org": "贵阳市经开区远达通讯经营部（小河韩廷圳代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 2,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 7
+        },
+        {
+          "org": "贵阳市经开区小范手机经营部（小河范华炬代办点）",
+          "xinruwang": 6,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 7
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员冯灿辉",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 7
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员赵世飞",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 3,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员熊贤勇",
+          "xinruwang": 4,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员贾崇庆",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 2,
+          "xielu": 1,
+          "total": 5
+        },
+        {
+          "org": "小河长江万科网格行销经理李红永",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 1,
+          "total": 5
+        },
+        {
+          "org": "贵阳市经开区小桥通讯器材经营部（小河何桥代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员荣昭宏",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员李祖新",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河长江万科网格行销经理韦雪",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "贵阳市经济开发区恒波通讯器材经营部（小河陈贵扬代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "贵州锐步鑫通讯科技有限公司（小河雷剑直销队）",
+          "xinruwang": 3,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河长江万科网格行销经理严章艳",
+          "xinruwang": 2,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员费学聪",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "贵阳市经开区恒点波通讯器材经营部（小河陈贵扬代办点）",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张建兵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员汪嘉乐",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳经济开发区鑫光春晟数码经营部(小河小天才万科厂商店)",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市经济开发区聚信达通讯经营部（小河孙旭东直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员刘飞翔",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵州百讯通网络科技有限公司（小河刘天赐直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳小河晶晶通讯器材经营部（小河三江东）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州华众明远电讯科技有限责任公司（小河转盘厂商）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1308-小河小城故事片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员杨明将",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员许树林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员张健",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员熊美梦",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员何杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员李阳光",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理邓云川",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理叶阳海",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理王美",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理李梦婷",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1309-小河美城新都片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州互助通移动通信网络服务有限公司(小河万科)",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理周红梅",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员熊美欢",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员陈善钰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员谭安元",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理李维琴",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员石启毫",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区长江万科网格铁通随销人员冯学靖",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市南明区启跃商贸行（小河田亚咪直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河长江万科网格行销经理杨玉玲",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ],
+      "3小河二戈寨网格": [
+        {
+          "org": "贵州沣范通讯设备有限公司（小河二戈引商）",
+          "xinruwang": 69,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 5,
+          "xielu": 2,
+          "total": 77
+        },
+        {
+          "org": "小河二戈寨网格行销经理谭玲",
+          "xinruwang": 12,
+          "dataitaocan": 3,
+          "fttr": 4,
+          "broadband": 7,
+          "xielu": 2,
+          "total": 28
+        },
+        {
+          "org": "小河二戈寨网格行销经理莫以琼",
+          "xinruwang": 7,
+          "dataitaocan": 2,
+          "fttr": 1,
+          "broadband": 6,
+          "xielu": 3,
+          "total": 19
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员杨志满",
+          "xinruwang": 3,
+          "dataitaocan": 2,
+          "fttr": 5,
+          "broadband": 6,
+          "xielu": 0,
+          "total": 16
+        },
+        {
+          "org": "贵阳市经济开发区鸿蒙手机店（小河朱川代办点）",
+          "xinruwang": 15,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 15
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员胡仕健",
+          "xinruwang": 2,
+          "dataitaocan": 1,
+          "fttr": 3,
+          "broadband": 3,
+          "xielu": 0,
+          "total": 9
+        },
+        {
+          "org": "贵阳市南明区文辰通讯经营部(小河邱埝扬代办点）",
+          "xinruwang": 5,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "小河二戈寨网格行销经理兰淞瑞",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 2,
+          "xielu": 1,
+          "total": 6
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员李伟",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 3,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员熊泽辉",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 2,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 6
+        },
+        {
+          "org": "南明高胜通讯器材经营部（小河张雷代办点）",
+          "xinruwang": 3,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 5
+        },
+        {
+          "org": "小河二戈寨网格行销经理龙依晨",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 1,
+          "total": 5
+        },
+        {
+          "org": "贵阳市南明区思源通信器材经营部（小河杨光花代办点）",
+          "xinruwang": 2,
+          "dataitaocan": 1,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员佟俊毫",
+          "xinruwang": 1,
+          "dataitaocan": 1,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 4
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员李红林",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 2,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员周先艳",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 1,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 3
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员范开军",
+          "xinruwang": 1,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 2
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员冯超",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员岑菊芬",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员黄启勇",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 1,
+          "xielu": 0,
+          "total": 1
+        },
+        {
+          "org": "贵阳市南明区韦永英通讯经营部（小河吴德芬代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "中移铁通贵阳分公司1310-小河二戈寨片区宽服中心（社会房产）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州亿鸿盛通讯科技有限公司贵阳分公司（小河珠显村）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区欧泰通讯设备经营部（小河）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理李江娥",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州裕泰通讯科技有限公司（小河石盼盼代办点）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理张泉",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理范美迪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理赵敏琼",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州瑶雅科技有限公司（小河廖丹平直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理田锦豪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理顾啟容",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理周瑾慧",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵阳市经济开发区移鑫通通讯经营部（小河徐艳直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨网格行销经理张承贵",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "贵州众智高达通讯科技有限公司（小河严勇直销队）",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河区二戈寨网格铁通随销人员汤绍江",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理邓豪",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理龙翔",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理周贞杰",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        },
+        {
+          "org": "小河二戈寨（铁通）网格行销经理李正伟",
+          "xinruwang": 0,
+          "dataitaocan": 0,
+          "fttr": 0,
+          "broadband": 0,
+          "xielu": 0,
+          "total": 0
+        }
+      ]
+    }
+  }
+}

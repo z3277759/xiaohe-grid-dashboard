@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小河网格产能监测与预警平台 - 日看板</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+    font-family: -apple-system, "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f0f2f5; color: #333; padding: 16px;
+}
+.header {
+    background: linear-gradient(135deg,#1a3a5c 0%,#2d6a9f 100%);
+    color: #fff; padding: 18px 28px; border-radius: 12px;
+    margin-bottom: 16px; display: flex; justify-content: space-between; align-items: center;
+}
+.header h1 { font-size: 22px; font-weight: 600; }
+.header .sub { font-size: 13px; opacity: .85; margin-top: 3px; }
+.header .badge { background: rgba(255,255,255,.2); padding: 6px 16px; border-radius: 20px; font-size: 15px; }
+
+/* Cards */
+.cards-row { display: grid; grid-template-columns: repeat(5,1fr); gap: 12px; margin-bottom: 16px; }
+.card {
+    background: #fff; border-radius: 10px; padding: 14px 16px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05); cursor: pointer;
+    border-left: 4px solid #2d6a9f; transition: transform .2s;
+}
+.card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.1); }
+.card .lbl { font-size: 13px; color: #888; margin-bottom: 4px; }
+.card .val { font-size: 28px; font-weight: 700; color: #1a3a5c; }
+.card .val .u { font-size: 13px; font-weight: 400; color: #999; margin-left: 3px; }
+.c-xinruwang { border-left-color: #5470c6; }
+.c-dataitaocan { border-left-color: #91cc75; }
+.c-fttr { border-left-color: #fac858; }
+.c-broadband { border-left-color: #ee6666; }
+.c-xielu { border-left-color: #73c0de; }
+
+/* Grid layout */
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 16px; }
+.row4 { display: grid; grid-template-columns: repeat(4,1fr); gap: 12px; margin-bottom: 16px; }
+
+.full { grid-column: 1 / -1; }
+
+.box {
+    background: #fff; border-radius: 10px; padding: 14px;
+    box-shadow: 0 2px 6px rgba(0,0,0,.05);
+}
+.box .title {
+    font-size: 15px; font-weight: 600; color: #1a3a5c;
+    margin-bottom: 10px; padding-bottom: 8px; border-bottom: 1px solid #eee;
+}
+.chart-ct { width: 100%; height: 360px; }
+.chart-ct.tall { height: 460px; }
+.chart-ct.short { height: 260px; }
+/* Grid table */
+.tbl-wrap { overflow-x: auto; }
+.tbl { width: 100%; border-collapse: collapse; font-size: 13px; }
+.tbl th {
+    background: #f7f9fc; padding: 8px 10px; text-align: center;
+    font-weight: 600; color: #555; border-bottom: 2px solid #e8eaed;
+}
+.tbl td { padding: 8px 10px; text-align: center; border-bottom: 1px solid #f0f0f0; }
+.tbl tbody tr { cursor: pointer; }
+.tbl tbody tr:hover td { background: #eef3ff; }
+.tbl .gn { text-align: left; font-weight: 500; }
+.tbl .total td { background: #f7f9fc; font-weight: 700; border-top: 2px solid #ddd; cursor: default; }
+.ok { color: #22a67e; font-weight: 600; }
+.warn { color: #e6a23c; font-weight: 600; }
+.bad { color: #e64a4a; font-weight: 600; }
+
+/* Modal */
+.modal-overlay {
+    display: none; position: fixed; top:0; left:0; right:0; bottom:0;
+    background: rgba(0,0,0,.4); z-index: 1000; justify-content: center; align-items: center;
+}
+.modal-overlay.show { display: flex; }
+.modal {
+    background: #fff; border-radius: 14px; width: 90%; max-width: 1000px;
+    max-height: 80vh; overflow-y: auto; padding: 24px; box-shadow: 0 8px 40px rgba(0,0,0,.2);
+}
+.modal .mh { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.modal .mh h2 { font-size: 18px; color: #1a3a5c; }
+.modal .close {
+    width: 32px; height: 32px; border-radius: 50%; border: none;
+    background: #f0f0f0; font-size: 18px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+}
+.modal .close:hover { background: #e0e0e0; }
+.ch-detail { font-size: 13px; }
+.ch-detail table { width: 100%; border-collapse: collapse; }
+.ch-detail th {
+    background: #f7f9fc; padding: 7px 10px; text-align: center;
+    font-weight: 600; border-bottom: 2px solid #e8eaed; font-size: 12px;
+}
+.ch-detail td { padding: 6px 10px; text-align: center; border-bottom: 1px solid #f0f0f0; }
+.ch-detail .org-name { text-align: left; max-width: 340px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+/* Summary strip */
+.summary-strip {
+    display: flex; gap: 10px; margin-bottom: 12px; flex-wrap: wrap;
+}
+.summary-item {
+    background: #f7f9fc; border-radius: 8px; padding: 8px 14px;
+    font-size: 13px; display: flex; align-items: center; gap: 8px;
+}
+.summary-item .dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+
+/* Tooltip */
+.tooltip-lbl { font-weight: 600; margin-bottom: 3px; }
+.tooltip-val { font-size: 12px; color: #666; }
+
+/* Diagnosis section */
+.diag-box {
+    background: #fff; border-radius: 12px; padding: 20px 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+    margin-bottom: 16px;
+}
+.diag-header {
+    display: flex; align-items: center; gap: 10px;
+    margin-bottom: 16px; padding-bottom: 12px; border-bottom: 1px solid #eee;
+}
+.diag-header h2 { font-size: 17px; font-weight: 700; color: #1a3a5c; }
+.diag-header .diag-badge {
+    background: #e64a4a; color: #fff; padding: 2px 10px;
+    border-radius: 12px; font-size: 12px; font-weight: 600;
+}
+.diag-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+}
+.diag-card {
+    border-radius: 10px; padding: 16px 18px;
+    border: 1px solid #ffe0e0; background: #fff5f5;
+}
+.diag-card.good { border-color: #d4edda; background: #f0fff4; }
+.diag-card h3 {
+    font-size: 15px; font-weight: 700; margin-bottom: 8px;
+    display: flex; align-items: center; gap: 6px;
+}
+.diag-card h3 .rank { font-size: 12px; opacity: .6; font-weight: 400; }
+.diag-stat { font-size: 13px; color: #555; line-height: 1.8; }
+.diag-stat strong { color: #333; }
+.diag-stat .tag {
+    display: inline-block; padding: 1px 8px; border-radius: 10px;
+    font-size: 12px; font-weight: 600; margin: 1px 2px;
+}
+.tag-red { background: #ffe0e0; color: #c0392b; }
+.tag-amber { background: #fff3cd; color: #856404; }
+.tag-green { background: #d4edda; color: #155724; }
+.tag-blue { background: #d0e6ff; color: #1a5276; }
+.diag-suggest {
+    margin-top: 10px; padding: 10px 14px; border-radius: 8px;
+    font-size: 13px; line-height: 1.7;
+}
+.diag-suggest.urgent { background: #fff0f0; border-left: 3px solid #e64a4a; }
+.diag-suggest.normal { background: #f0f7ff; border-left: 3px solid #2d6a9f; }
+.diag-suggest li { margin: 4px 0; list-style: none; }
+.diag-suggest li::before { content: "💡 "; }
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <div>
+        <h1>小河网格产能监测平台</h1>
+        <div class="sub">基于多维经营数据的网格产能监测与预警 · 日看板</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;">
+        <a href="/lines.html" class="nav-btn" style="background:rgba(255,255,255,.15);color:#fff;text-decoration:none;padding:7px 16px;border-radius:18px;font-size:13px;display:flex;align-items:center;gap:5px;">
+             产线明细
+        </a>
+        <div class="badge" id="dateBadge">2026-06-05</div>
+    </div>
+</div>
+
+<!-- Tab bar -->
+<div style="display:flex;gap:0;margin-bottom:16px;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,.05);">
+    <button class="tab-btn active" id="tabDaily" onclick="switchTab('daily')" style="flex:1;padding:12px;border:none;background:var(--tab-bg,#2d6a9f);color:#fff;font-size:15px;font-weight:600;cursor:pointer;transition:all .2s;">📅 日看板（6月5日）</button>
+    <button class="tab-btn" id="tabMonthly" onclick="switchTab('monthly')" style="flex:1;padding:12px;border:none;background:#f0f2f5;color:#666;font-size:15px;font-weight:500;cursor:pointer;transition:all .2s;">📆 月看板（6月1日-5日）</button>
+</div>
+
+<!-- 5 Cards -->
+<div class="cards-row" id="cardsContainer">
+    <div class="card c-xinruwang" onclick="filterByIndicator('xinruwang')">
+        <div class="lbl"> 新入网</div>
+        <div class="val" id="val-xinruwang">-<span class="u">笔</span></div>
+    </div>
+    <div class="card c-dataitaocan" onclick="filterByIndicator('dataitaocan')">
+        <div class="lbl">大套餐</div>
+        <div class="val" id="val-dataitaocan">-<span class="u">笔</span></div>
+    </div>
+    <div class="card c-fttr" onclick="filterByIndicator('fttr')">
+        <div class="lbl"> FTTR</div>
+        <div class="val" id="val-fttr">-<span class="u">笔</span></div>
+    </div>
+    <div class="card c-broadband" onclick="filterByIndicator('broadband')">
+        <div class="lbl"> 宽带新增</div>
+        <div class="val" id="val-broadband">-<span class="u">笔</span></div>
+    </div>
+    <div class="card c-xielu" onclick="filterByIndicator('xielu')">
+        <div class="lbl"> 携转</div>
+        <div class="val" id="val-xielu">-<span class="u">笔</span></div>
+    </div>
+</div>
+
+<!-- Grid table (full width) -->
+<div class="box full">
+    <div class="title"> 网格日看板 — 点击网格查看渠道明细</div>
+    <div class="tbl-wrap">
+        <table class="tbl" id="gridTable">
+            <thead><tr>
+                <th>网格名称</th>
+                <th>新入网</th><th>大套餐</th><th>FTTR</th>
+                <th>宽带新增</th><th>携转</th><th>合计</th>
+            </tr></thead>
+            <tbody id="gridTableBody"></tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Heatmap + 产线总览 -->
+<div class="row2">
+    <div class="box"><div class="title"> 网格×指标 贡献热力图</div><div class="chart-ct" id="heatmapChart"></div></div>
+    <div class="box"><div class="title"> 产线总贡献（堆叠）</div><div class="chart-ct" id="lineChart"></div></div>
+</div>
+
+<!-- 4 Production line charts -->
+<div class="row4">
+    <div class="box"><div class="title" style="border-left:3px solid #e74c3c;padding-left:8px;">🔴 重要渠道</div><div class="chart-ct short" id="line1Chart"></div></div>
+    <div class="box"><div class="title" style="border-left:3px solid #f39c12;padding-left:8px;">🟡 中腰渠道</div><div class="chart-ct short" id="line2Chart"></div></div>
+    <div class="box"><div class="title" style="border-left:3px solid #3498db;padding-left:8px;">🔵 铁通渠道</div><div class="chart-ct short" id="line3Chart"></div></div>
+    <div class="box"><div class="title" style="border-left:3px solid #2ecc71;padding-left:8px;">🟢 行销渠道</div><div class="chart-ct short" id="line4Chart"></div></div>
+</div>
+
+<!-- Diagnosis & Suggestions -->
+<div class="diag-box" id="diagSection">
+    <div class="diag-header">
+        <h2> 经营诊断与改进建议</h2>
+        <span class="diag-badge">需关注</span>
+        <span style="font-size:13px;color:#888;margin-left:auto;">基于当日数据分析 · 自动生成</span>
+    </div>
+    <div class="diag-grid" id="diagGrid"></div>
+</div>
+
+<!-- Detail Modal -->
+<div class="modal-overlay" id="detailModal">
+    <div class="modal">
+        <div class="mh">
+            <h2 id="modalTitle">网格渠道明细</h2>
+            <button class="close" onclick="closeModal()">✕</button>
+        </div>
+        <div id="modalContent"></div>
+    </div>
+</div>
+
+<script>
+// ======================== Data ========================
+let ALL_DATA = null;
+let currentTab = 'daily';
+
+fetch('./data.json').then(r=>r.json()).then(data=>{
+    ALL_DATA = data;
+    renderAll(data.daily);
+    document.getElementById('dateBadge').textContent = '日:'+data.meta.dailyDate;
+}).catch(err=>{
+    document.body.innerHTML='<div style="padding:40px;text-align:center;color:red;"><h2>❌ 数据加载失败: '+err.message+'</h2></div>';
+});
+
+function switchTab(tab) {
+    if (tab === currentTab) return;
+    currentTab = tab;
+    document.getElementById('tabDaily').style.background = tab==='daily' ? '#2d6a9f' : '#f0f2f5';
+    document.getElementById('tabDaily').style.color = tab==='daily' ? '#fff' : '#666';
+    document.getElementById('tabDaily').style.fontWeight = tab==='daily' ? '600' : '500';
+    document.getElementById('tabMonthly').style.background = tab==='monthly' ? '#2d6a9f' : '#f0f2f5';
+    document.getElementById('tabMonthly').style.color = tab==='monthly' ? '#fff' : '#666';
+    document.getElementById('tabMonthly').style.fontWeight = tab==='monthly' ? '600' : '500';
+    const d = tab==='daily' ? ALL_DATA.daily : ALL_DATA.monthly;
+    renderAll(d);
+    document.getElementById('dateBadge').textContent = tab==='daily' ? '日:'+ALL_DATA.meta.dailyDate : '月:'+ALL_DATA.meta.monthRange;
+}
+
+const IKEYS = ['xinruwang','dataitaocan','fttr','broadband','xielu'];
+const INAMES = {xinruwang:'新入网',dataitaocan:'大套餐',fttr:'FTTR',broadband:'宽带新增',xielu:'携转'};
+const ICLR  = {xinruwang:'#5470c6',dataitaocan:'#91cc75',fttr:'#fac858',broadband:'#ee6666',xielu:'#73c0de'};
+const LNAMES = {'1重要':'重要渠道','2中腰':'中腰渠道','3铁通':'铁通渠道','4行销':'行销渠道'};
+
+function renderAll(d) {
+    renderCards(d);
+    renderGridTable(d);
+    renderHeatmap(d);
+    renderLineOverview(d);
+    ['1重要','2中腰','3铁通','4行销'].forEach((l,i)=>{ renderLineChart(d, l, 'line'+(i+1)+'Chart'); });
+    renderDiagnosis(d);
+}
+
+/* 1. Cards */
+// 1. Cards
+function renderCards(d) {
+    IKEYS.forEach(k=>{
+        const el=document.getElementById('val-'+k);
+        if(el) el.innerHTML = d.overview[k]+'<span class="u">笔</span>';
+    });
+}
+
+// 2. Grid table with click
+function renderGridTable(d) {
+    const tbody = document.getElementById('gridTableBody');
+    let html = '';
+    const total = {grid:'合计'};
+    IKEYS.forEach(k=>total[k]=0);
+    total.total=0;
+
+    d.gridData.forEach(g=>{
+        IKEYS.forEach(k=>{ total[k]+=g[k]||0; });
+        total.total+=g.total||0;
+        const name = g.grid.replace(/^[0-9]+/,'');
+        html+='<tr onclick="showGridDetail(\''+g.grid+'\')">';
+        html+='<td class="gn">'+name+'</td>';
+        IKEYS.forEach(k=>{
+            const v=g[k]||0;
+            const cls=v===0?'bad':(v>=Math.ceil(d.overview[k]*0.3)?'ok':'');
+            html+='<td class="'+cls+'">'+v+'</td>';
+        });
+        html+='<td><strong>'+g.total+'</strong></td></tr>';
+    });
+
+    html+='<tr class="total">';
+    html+='<td class="gn">合计</td>';
+    IKEYS.forEach(k=>html+='<td>'+total[k]+'</td>');
+    html+='<td>'+total.total+'</td></tr>';
+
+    tbody.innerHTML = html;
+}
+
+// 3. Heatmap
+function renderHeatmap(d) {
+    const c = echarts.init(document.getElementById('heatmapChart'));
+    const grids = d.gridData.map(g=>g.grid.replace(/^[0-9]+/,''));
+    const inds = IKEYS.map(k=>INAMES[k]);
+    let maxV=0, hd=[];
+    d.gridData.forEach((g,gi)=>{
+        IKEYS.forEach((k,ki)=>{
+            const v=g[k]||0;
+            hd.push([ki,gi,v]);
+            if(v>maxV) maxV=v;
+        });
+    });
+    c.setOption({
+        tooltip:{position:'top',formatter:p=>grids[p.value[1]]+'<br>'+inds[p.value[0]]+': <strong>'+p.value[2]+'</strong>笔'},
+        grid:{left:'14%',right:'6%',top:'5%',bottom:'14%'},
+        xAxis:{type:'category',data:inds,splitArea:{show:true},axisLabel:{fontSize:11}},
+        yAxis:{type:'category',data:grids,splitArea:{show:true},axisLabel:{fontSize:11}},
+        visualMap:{min:0,max:maxV,calculable:true,orient:'horizontal',left:'center',bottom:'0%',
+            inRange:{color:['#f0f5ff','#c6d9ff','#7aa3ff','#3366ff','#001f66']}},
+        series:[{type:'heatmap',data:hd,
+            label:{show:true,color:'#333',fontSize:12,fontWeight:'bold',formatter:p=>p.value[2]||''},
+            emphasis:{itemStyle:{shadowBlur:10,shadowColor:'rgba(0,0,0,.3)'}}}]
+    });
+    window.addEventListener('resize',()=>c.resize());
+}
+
+// 4. Line overview (stacked bar)
+function renderLineOverview(d) {
+    const c = echarts.init(document.getElementById('lineChart'));
+    const lines = d.lineData.map(l=>LNAMES[l.line]||l.line);
+    c.setOption({
+        tooltip:{trigger:'axis',axisPointer:{type:'shadow'},
+            formatter:ps=>{
+                let h='<div class="tooltip-lbl">'+ps[0].axisValue+'</div>',t=0;
+                ps.forEach(p=>{t+=p.value;h+='<div class="tooltip-val">'+p.marker+' '+p.seriesName+': '+p.value+'笔</div>';});
+                return h+'<div style="border-top:1px solid #eee;margin-top:4px;padding-top:4px;font-weight:600;">合计: '+t+'笔</div>';
+            }},
+        legend:{data:IKEYS.map(k=>INAMES[k]),top:0,textStyle:{fontSize:11}},
+        grid:{left:'3%',right:'4%',top:'18%',bottom:'3%',containLabel:true},
+        xAxis:{type:'category',data:lines,axisLabel:{fontSize:11}},
+        yAxis:{type:'value',axisLabel:{fontSize:10}},
+        series: IKEYS.map(k=>({
+            name:INAMES[k],type:'bar',stack:'total',barMaxWidth:36,
+            data:d.lineData.map(l=>l[k]||0),
+            itemStyle:{color:ICLR[k]}
+        }))
+    });
+    window.addEventListener('resize',()=>c.resize());
+}
+
+// 5. Per-line chart (stacked bar showing grid distribution for one line)
+function renderLineChart(d, line, domId) {
+    const c = echarts.init(document.getElementById(domId));
+    const filtered = d.gridLineData.filter(x=>x.line===line);
+    const grids = d.gridData.map(g=>g.grid.replace(/^[0-9]+/,''));
+    const agg = {};
+    filtered.forEach(x=>{
+        const g = x.grid.replace(/^[0-9]+/,'');
+        if(!agg[g]){ agg[g]={}; IKEYS.forEach(k=>agg[g][k]=0); }
+        IKEYS.forEach(k=>{ agg[g][k]+=x[k]||0; });
+    });
+    c.setOption({
+        tooltip:{trigger:'axis',axisPointer:{type:'shadow'},
+            formatter:ps=>{
+                let h='<div class="tooltip-lbl">'+ps[0].axisValue+'</div>',t=0;
+                ps.forEach(p=>{t+=p.value;h+='<div class="tooltip-val">'+p.marker+' '+p.seriesName+': '+p.value+'笔</div>';});
+                return h+'<div style="border-top:1px solid #eee;margin-top:4px;padding-top:4px;font-weight:600;">合计: '+t+'笔</div>';
+            }},
+        legend:{data:IKEYS.map(k=>INAMES[k]),top:0,textStyle:{fontSize:10}},
+        grid:{left:'3%',right:'4%',top:'20%',bottom:'3%',containLabel:true},
+        xAxis:{type:'category',data:grids,axisLabel:{fontSize:10,rotate:grids.length>4?20:0}},
+        yAxis:{type:'value',axisLabel:{fontSize:9}},
+        series: IKEYS.map(k=>({
+            name:INAMES[k],type:'bar',stack:'total',barMaxWidth:30,
+            data:grids.map(g=>(agg[g]&&agg[g][k])||0),
+            itemStyle:{color:ICLR[k]}
+        }))
+    });
+    window.addEventListener('resize',()=>c.resize());
+}
+
+// 6. Show grid detail (modal)
+function showGridDetail(gridName) {
+    if(!ALL_DATA) return;
+    const curData = currentTab==='daily' ? ALL_DATA.daily : ALL_DATA.monthly;
+    document.getElementById('modalTitle').textContent = '🔍 ' + gridName.replace(/^[0-9]+/,'') + ' — 渠道受理组织明细';
+
+    const details = curData.orgDetails[gridName];
+    if(!details || details.length===0){
+        document.getElementById('modalContent').innerHTML = '<p style="color:#999;padding:20px;text-align:center;">该网格下无渠道明细数据</p>';
+    } else {
+        // Build org detail table
+        let html = '<div class="ch-detail"><table><thead><tr>';
+        html += '<th>受理组织（渠道）</th>';
+        IKEYS.forEach(k=>html+='<th>'+INAMES[k]+'</th>');
+        html += '<th>合计</th><th>所属产线</th>';
+        html += '</tr></thead><tbody>';
+
+        // Sort by total desc
+        details.sort((a,b)=>b.total-a.total);
+
+        details.forEach(d=>{
+            const lineName = getLineName(d.org);
+            const total = IKEYS.reduce((s,k)=>s+((d[k]||0)),0);
+            html += '<tr>';
+            html += '<td class="org-name" title="'+d.org+'">'+d.org+'</td>';
+            IKEYS.forEach(k=>{
+                const v=d[k]||0;
+                const cls=v===0?'bad':(v>=3?'ok':'');
+                html += '<td class="'+cls+'">'+v+'</td>';
+            });
+            html += '<td><strong>'+total+'</strong></td>';
+            html += '<td>'+lineName+'</td>';
+            html += '</tr>';
+        });
+
+        html += '</tbody></table></div>';
+        document.getElementById('modalContent').innerHTML = html;
+    }
+
+    document.getElementById('detailModal').classList.add('show');
+}
+
+function getLineName(org) {
+    if(!ALL_DATA) return '';
+    const gl = (currentTab==='daily' ? ALL_DATA.daily : ALL_DATA.monthly).gridLineData;
+    for(const item of gl){
+        if(item.orgs && item.orgs.includes(org)){
+            return LNAMES[item.line] || item.line;
+        }
+    }
+    return '未分类';
+}
+
+function closeModal() {
+    document.getElementById('detailModal').classList.remove('show');
+}
+// Click overlay to close
+document.getElementById('detailModal').addEventListener('click', function(e){
+    if(e.target===this) closeModal();
+});
+
+// 7. Indicator card click
+function filterByIndicator(ind) {
+    if(!ALL_DATA) return;
+    const cur = currentTab==='daily' ? ALL_DATA.daily : ALL_DATA.monthly;
+    let msg = ' <strong>'+INAMES[ind]+'</strong> 当日完成 <strong>'+cur.overview[ind]+'</strong> 笔\n\n各网格明细：\n';
+    cur.gridData.forEach(g=>{
+        msg += '  ' + g.grid.replace(/^[0-9]+/,'') + ': ' + (g[ind]||0) + '笔\n';
+    });
+    alert(msg);
+}
+
+// ======================== 8. Diagnosis Engine ========================
+function renderDiagnosis(d) {
+    const grids = [...d.gridData].sort((a,b)=>a.total-b.total);
+    const lagging = grids.slice(0, 2);
+    const leading = grids.slice(-1)[0];
+    const avg = grids.reduce((s,g)=>s+g.total, 0) / grids.length;
+    const totalAll = d.overview;
+    let gridHtml = '';
+
+    lagging.forEach((g, idx) => {
+        const name = g.grid.replace(/^[0-9]+/,'');
+        const gap = Math.round(avg - g.total);
+        const gapPct = Math.round((1 - g.total/avg)*100);
+        const weakInds = [];
+        const strongInds = [];
+        IKEYS.forEach(k => {
+            const v = g[k] || 0;
+            const indAvg = totalAll[k] / grids.length;
+            if (v === 0) weakInds.push({ key: k, val: v, avg: Math.round(indAvg), level: 'zero' });
+            else if (v < indAvg * 0.5) weakInds.push({ key: k, val: v, avg: Math.round(indAvg), level: 'low' });
+            else if (v >= indAvg * 1.2) strongInds.push({ key: k, val: v, avg: Math.round(indAvg) });
+        });
+        const glData = d.gridLineData.filter(x => x.grid === g.grid);
+        const lineStats = glData.map(x => ({ line: x.line, total: x.total, lineName: LNAMES[x.line] || x.line })).sort((a,b) => b.total - a.total);
+        const totalLineContrib = lineStats.reduce((s,l)=>s+l.total, 0);
+        const linesPresent = lineStats.filter(l => l.total > 0);
+        const linesMissing = Object.keys(LNAMES).filter(lk => !linesPresent.some(l => l.line === lk));
+        const isWorst = idx === 0;
+        const cardBg = isWorst ? 'background:#fff5f5;border-color:#ffcccc;' : 'background:#fffaf0;border-color:#ffe0b0;';
+
+        let s = `<div class="diag-stat">`;
+        s += `当日完成 <strong>${g.total}笔</strong>，低于网格均值 <strong>${Math.round(avg)}笔</strong>，差距 <strong style="color:#e64a4a;">${gap}笔 (${gapPct}%)</strong><br>`;
+        if (weakInds.length > 0) {
+            s += `🔻 薄弱指标：`;
+            weakInds.forEach(w => { s += `<span class="tag ${w.level === 'zero' ? 'tag-red' : 'tag-amber'}">${INAMES[w.key]} ${w.val}笔</span> `; });
+            s += `（网格均值 ${weakInds[0]?.avg||'-'}笔）<br>`;
+        }
+        if (strongInds.length > 0) {
+            s += `✅ 相对优势：`;
+            strongInds.forEach(si => { s += `<span class="tag tag-green">${INAMES[si.key]} ${si.val}笔</span> `; });
+            s += `<br>`;
+        }
+        s += `🏭 产线构成：`;
+        if (lineStats.length > 0) {
+            lineStats.forEach(l => {
+                const pct = totalLineContrib > 0 ? Math.round(l.total/totalLineContrib*100) : 0;
+                s += `<span class="tag ${pct >= 50 ? 'tag-red' : (pct >= 30 ? 'tag-amber' : 'tag-blue')}">${l.lineName} ${l.total}笔(${pct}%)</span> `;
+            });
+        }
+        if (linesMissing.length > 0) s += `<span class="tag tag-red">缺${linesMissing.map(l=>LNAMES[l]).join('/')}</span>`;
+        s += `</div>`;
+
+        let tips = [];
+        const weakest = weakInds[0];
+        if (weakInds.some(w => w.level === 'zero')) {
+            tips.push(`<strong>${weakInds.filter(w=>w.level==='zero').map(w=>INAMES[w.key]).join('、')}</strong>当日挂零，建议立即排查工单积压或渠道受理权限问题`);
+        }
+        if (weakest && weakest.val > 0) {
+            tips.push(`<strong>${INAMES[weakest.key]}</strong>仅${weakest.val}笔（均值${weakest.avg}笔），可对标${leading.grid.replace(/^[0-9]+/,'')}（${INAMES[weakest.key]} ${leading[weakest.key]||0}笔）`);
+        }
+        if (linesMissing.length > 0) {
+            tips.push(`缺少<strong>${linesMissing.map(l=>LNAMES[l]).join('、')}</strong>支撑，建议协调资源下沉，避免依赖${lineStats[0]?.lineName||'单一产线'}`);
+        }
+        if (lineStats.length > 0 && lineStats[0].total / totalLineContrib > 0.6) {
+            tips.push(`<strong>${lineStats[0].lineName}</strong>占比${Math.round(lineStats[0].total/totalLineContrib*100)}%，建议培育${lineStats[1]?.lineName||'其他产线'}产能`);
+        }
+        const peer = grids.filter(x => x.grid !== g.grid);
+        IKEYS.forEach(k => {
+            const myVal = g[k]||0;
+            const bestPeer = Math.max(...peer.map(p => p[k]||0));
+            if (myVal === 0 && bestPeer > 3) {
+                const bestGrid = peer.find(p => (p[k]||0) === bestPeer);
+                if (bestGrid && !tips.some(t => t.includes(INAMES[k]))) {
+                    tips.push(`参考<strong>${bestGrid.grid.replace(/^[0-9]+/,'')}</strong>在${INAMES[k]}上的做法（${bestPeer}笔）`);
+                }
+            }
+        });
+        tips.push(`调度会重点调度${name}，由网格长汇报提升计划`);
+
+        gridHtml += `
+        <div class="diag-card" style="${cardBg}">
+            <h3>${isWorst ? '⚠️' : '⚡'} ${name} <span class="rank">排名靠后 · ${g.total}笔 / 均值${Math.round(avg)}笔</span></h3>
+            ${s}
+            <div class="diag-suggest urgent">
+                <strong>📌 建议：</strong>
+                <ul style="margin:6px 0 0 0;padding-left:18px;">
+                    ${tips.slice(0,4).map(t => `<li>${t}</li>`).join('')}
+                </ul>
+            </div>
+        </div>`;
+    });
+
+    document.getElementById('diagGrid').innerHTML = gridHtml;
+}
+
+</script>
+</body>
+</html>
