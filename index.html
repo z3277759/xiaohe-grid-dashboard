@@ -352,7 +352,7 @@ function renderRingCharts(tab) {
 
         const c = echarts.init(document.getElementById('ring'+i));
         c.setOption({
-            tooltip:{formatter:g.name+'<br/>日指标: <strong>'+target+'</strong> | 完成: '+actual+'<br/>完成率: <strong>'+pct+'%</strong>'},
+            tooltip:{formatter:g.name+'<br/>'+(isMonthly?'月指标':'日指标')+': <strong>'+target+'</strong> | 完成: '+actual+'<br/>完成率: <strong>'+pct+'%</strong>'},
             series:[{
                 type:'pie', radius:['58%','80%'], avoidLabelOverlap:false,
                 label:{show:false}, emphasis:{scale:false}, animationDuration:800,
