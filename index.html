@@ -158,6 +158,13 @@ body {
 .diag-suggest li { margin: 4px 0; list-style: none; }
 .diag-suggest li::before { content: "💡 "; }
 
+/* Ring progress */
+.ring-wrap { display:grid; grid-template-columns:repeat(5,1fr); gap:12px; height:230px; }
+.ring-item { position:relative; display:flex; flex-direction:column; align-items:center; justify-content:center; }
+.ring-item canvas { width:100%!important; height:165px!important; }
+.ring-item .ring-name { font-size:13px; color:#555; font-weight:500; margin-top:1px; }
+.ring-item .ring-rate { font-size:15px; font-weight:700; margin-top:2px; letter-spacing:0.5px; }
+
 </style>
 </head>
 <body>
@@ -202,6 +209,18 @@ body {
     <div class="card c-xielu" onclick="filterByIndicator('xielu')">
         <div class="lbl"> 携转</div>
         <div class="val" id="val-xielu">-<span class="u">笔</span></div>
+    </div>
+</div>
+
+<!-- Ring progress -->
+<div class="box full" style="margin-bottom:16px;">
+    <div class="title"> 网格新入网日指标</div>
+    <div class="ring-wrap" id="ringContainer">
+        <div class="ring-item" id="ringItem0"><div id="ring0" style="width:100%;height:170px;"></div><div class="ring-name">长江万科</div><div class="ring-rate" id="rate0">--</div></div>
+        <div class="ring-item" id="ringItem1"><div id="ring1" style="width:100%;height:170px;"></div><div class="ring-name">平桥兴隆</div><div class="ring-rate" id="rate1">--</div></div>
+        <div class="ring-item" id="ringItem2"><div id="ring2" style="width:100%;height:170px;"></div><div class="ring-name">二戈寨</div><div class="ring-rate" id="rate2">--</div></div>
+        <div class="ring-item" id="ringItem3"><div id="ring3" style="width:100%;height:170px;"></div><div class="ring-name">金竹中曹</div><div class="ring-rate" id="rate3">--</div></div>
+        <div class="ring-item" id="ringItem4"><div id="ring4" style="width:100%;height:170px;"></div><div class="ring-name">望城</div><div class="ring-rate" id="rate4">--</div></div>
     </div>
 </div>
 
@@ -289,11 +308,72 @@ const LNAMES = {'1重要':'重要渠道','2中腰':'中腰渠道','3铁通':'铁
 
 function renderAll(d) {
     renderCards(d);
+    renderRingCharts(currentTab);
     renderGridTable(d);
     renderHeatmap(d);
     renderLineOverview(d);
     ['1重要','2中腰','3铁通','4行销'].forEach((l,i)=>{ renderLineChart(d, l, 'line'+(i+1)+'Chart'); });
     renderDiagnosis(d);
+}
+
+/* Ring progress charts */
+function renderRingCharts(tab) {
+    const isMonthly = tab === 'monthly';
+    const d = isMonthly ? ALL_DATA.monthly : ALL_DATA.daily;
+    const mul = isMonthly ? 30 : 1;
+
+    const grids = [
+        { grid:'1小河长江万科网格', name:'长江万科', target:33 },
+        { grid:'2小河平桥兴隆网格', name:'平桥兴隆', target:62 },
+        { grid:'3小河二戈寨网格',   name:'二戈寨',   target:22 },
+        { grid:'4小河金竹中曹网格', name:'金竹中曹', target:17 },
+        { grid:'5小河望城网格',     name:'望城',     target:17 }
+    ];
+
+    // Update section title
+    document.querySelector('.ring-wrap').previousElementSibling.textContent = isMonthly ? ' 网格新入网月指标' : ' 网格新入网日指标';
+
+    // Build actual data lookup
+    const actualMap = {};
+    d.gridData.forEach(g => { actualMap[g.grid] = g.xinruwang || 0; });
+
+    grids.forEach((g, i)=>{
+        const target = g.target * mul;
+        const actual = actualMap[g.grid] || 0;
+        const pct = Math.round(actual / target * 100);
+        const rate = Math.min(actual / target, 1);
+
+        // Color by completion level
+        let fillColor;
+        if (pct >= 100) fillColor = '#22a67e';
+        else if (pct >= 70) fillColor = '#2d6a9f';
+        else if (pct >= 40) fillColor = '#e6a23c';
+        else fillColor = '#e64a4a';
+
+        const c = echarts.init(document.getElementById('ring'+i));
+        c.setOption({
+            tooltip:{formatter:g.name+'<br/>日指标: <strong>'+target+'</strong> | 完成: '+actual+'<br/>完成率: <strong>'+pct+'%</strong>'},
+            series:[{
+                type:'pie', radius:['58%','80%'], avoidLabelOverlap:false,
+                label:{show:false}, emphasis:{scale:false}, animationDuration:800,
+                data:[
+                    {value:rate, name:'完成', itemStyle:{color:fillColor}},
+                    {value:1-rate, name:'', itemStyle:{color:'#edf2f7'}}
+                ]
+            }],
+            graphic:[{
+                type:'text', left:'center', top:'36%',
+                style:{
+                    text: target.toString(),
+                    textAlign:'center', fill:'#1a3a5c',
+                    font:'bold 27px -apple-system,"Microsoft YaHei",sans-serif'
+                }
+            }]
+        });
+        document.getElementById('rate'+i).textContent = '完成率 '+pct+'%';
+        document.getElementById('rate'+i).style.color = fillColor;
+        window.addEventListener('resize',()=>c.resize());
+    });
 }
 
 /* 1. Cards */
